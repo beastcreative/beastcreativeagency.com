@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --color-beast-pink: #ff1198;
+  --color-beast-pink-hover: #ff8fce;
+  --color-beast-dark: #0c0c0c;
+  --color-beast-purple: #4a4b7c;
+}
+
+:root {
+  --pink: #ff1198;
+  --pink-hover: #ff8fce;
+  --bg: #0c0c0c;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #0c0c0c;
+  color: #ffffff;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 500;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Raleway', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+}
+
+a {
+  color: #ff1198;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #ff8fce;
+}
+
+.container {
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+@keyframes marquee {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+
+@keyframes marquee-reverse {
+  from { transform: translateX(-50%); }
+  to { transform: translateX(0); }
+}
+
+.marquee-track {
+  display: flex;
+  white-space: nowrap;
+  animation: marquee 20s linear infinite;
+}
+
+.marquee-track-reverse {
+  display: flex;
+  white-space: nowrap;
+  animation: marquee-reverse 20s linear infinite;
+}
+
+/* FAQ accordion */
+.faq-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+}
+.faq-content.open {
+  max-height: 500px;
+}
