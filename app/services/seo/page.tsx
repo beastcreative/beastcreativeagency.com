@@ -1,80 +1,143 @@
-import CTAButton from '@/components/CTAButton';
+import type { Metadata } from 'next';
 
-export const metadata = {
-  title: 'SEO Agency San Antonio | Search Engine Optimization | Beast',
-  description: 'Data-driven SEO services in San Antonio TX. Dominate Google rankings and drive qualified organic traffic. Beast Creative Agency.',
+export const metadata: Metadata = {
+  title: 'SEO Services San Antonio | Search Engine Optimization | Beast',
+  description: 'Data-driven SEO services in San Antonio. Keyword research, technical SEO, content strategy, and link building that drives organic traffic and qualified leads.',
+  alternates: { canonical: 'https://www.beastcreativeagency.com/services/seo' },
 };
 
-export default function SEOPage() {
+const h2Style = {
+  color: 'var(--text)',
+  fontFamily: 'var(--font-geist, sans-serif)',
+  fontWeight: 700,
+  fontSize: 'clamp(22px, 3vw, 32px)' as string,
+  lineHeight: 1.2,
+  marginBottom: '20px',
+};
+
+const bodyStyle = {
+  color: 'var(--text-secondary)',
+  fontFamily: 'var(--font-geist, sans-serif)',
+  fontSize: '17px',
+  lineHeight: '1.8',
+  maxWidth: '760px',
+};
+
+export default function SEOServicesPage() {
   return (
     <>
-      <section style={{ background: 'var(--bg)', padding: '100px 0 60px', borderBottom: '1px solid var(--border)' }}>
+      {/* Hero */}
+      <section style={{ background: 'var(--bg)', padding: '120px 0 80px', borderBottom: '1px solid var(--border)' }}>
         <div className="container">
-          <div style={{ maxWidth: '700px' }}>
-            <span style={{ color: '#ff1198', fontFamily: 'var(--font-geist, sans-serif)', fontWeight: 700, fontSize: '13px', textTransform: 'uppercase', letterSpacing: '0.1em', display: 'block', marginBottom: '16px' }}>Services</span>
-            <h1 style={{ color: 'var(--text)', fontFamily: 'var(--font-geist, sans-serif)', fontWeight: 700, fontSize: 'clamp(32px, 5vw, 56px)', textTransform: 'uppercase', lineHeight: 1.1, marginBottom: '24px' }}>
-              Search Engine Optimization
-            </h1>
-            <p style={{ color: 'var(--text-secondary)', fontFamily: 'var(--font-geist, sans-serif)', fontSize: '18px', lineHeight: '1.7', marginBottom: '40px' }}>
-              Dominate Google rankings with data-driven SEO strategies that drive qualified organic traffic and long-term revenue growth.
+          <span style={{ color: 'var(--green)', fontFamily: 'var(--font-geist, sans-serif)', fontWeight: 700, fontSize: '12px', textTransform: 'uppercase', letterSpacing: '0.12em', display: 'block', marginBottom: '16px' }}>
+            Search Engine Optimization
+          </span>
+          <h1 style={{ color: 'var(--text)', fontFamily: 'var(--font-geist, sans-serif)', fontWeight: 700, fontSize: 'clamp(36px, 5vw, 56px)', lineHeight: 1.1, marginBottom: '24px' }}>
+            SEO Services in San Antonio, Texas
+          </h1>
+          <p style={{ color: 'var(--text-muted)', fontFamily: 'var(--font-geist, sans-serif)', fontSize: '17px', lineHeight: '1.75', maxWidth: '680px' }}>
+            Ranking on Google is not luck. It is architecture. Beast builds SEO strategies around real search data,
+            technical precision, and content that earns rankings and keeps them.
+          </p>
+        </div>
+      </section>
+
+      {/* Section 1 */}
+      <section style={{ background: 'var(--bg)', padding: '80px 0' }}>
+        <div className="container">
+          <div style={{ maxWidth: '760px' }}>
+            <h2 style={h2Style}>Keyword Research &amp; Competitive Analysis</h2>
+            <p style={bodyStyle}>
+              Most SEO campaigns fail because they target the wrong keywords. Beast starts every engagement with deep keyword research
+              that maps actual search demand to your specific business goals. We analyze what your competitors rank for, where they
+              have gaps, and which keywords represent the highest opportunity for your site to gain ground quickly.
             </p>
-            <CTAButton href="/contact">Get a Free SEO Audit</CTAButton>
+            <p style={{ ...bodyStyle, marginTop: '16px' }}>
+              Our keyword research process goes beyond search volume. We look at intent, competition density, current rankings, and
+              commercial value. A keyword with 10,000 monthly searches that your competitors dominate is a worse target than a
+              keyword with 800 monthly searches where your site can move to page one in 60 days. We find those opportunities and
+              build your entire content and link strategy around them. San Antonio businesses we work with see measurable ranking
+              improvements within the first 90 days.
+            </p>
           </div>
         </div>
       </section>
 
+      {/* Section 2 */}
       <section style={{ background: 'var(--bg-surface)', padding: '80px 0' }}>
         <div className="container">
-          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '80px' }}>
+          <div style={{ maxWidth: '760px' }}>
+            <h2 style={h2Style}>Technical SEO &amp; Site Architecture</h2>
+            <p style={bodyStyle}>
+              A beautiful website that Google cannot crawl is invisible. Technical SEO is the foundation that makes everything else
+              work. Beast conducts comprehensive technical audits covering crawlability, indexation, site speed, Core Web Vitals,
+              schema markup, canonical structure, mobile usability, and internal link architecture.
+            </p>
+            <p style={{ ...bodyStyle, marginTop: '16px' }}>
+              We fix issues that block Google from understanding your site, then build the structure that helps it understand and
+              reward your content. This includes implementing structured data that can earn featured snippets, optimizing your
+              site speed to meet Google's performance thresholds, and building a canonical URL strategy that prevents duplicate
+              content from diluting your ranking power. Technical SEO is not a one-time audit. It is ongoing maintenance that
+              keeps your foundation solid as Google's algorithm evolves.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* Section 3 */}
+      <section style={{ background: 'var(--bg)', padding: '80px 0' }}>
+        <div className="container">
+          <div style={{ maxWidth: '760px' }}>
+            <h2 style={h2Style}>Content Strategy That Ranks</h2>
+            <p style={bodyStyle}>
+              Content is how you earn rankings at scale. Beast builds content strategies around topic clusters, which means
+              instead of publishing random blog posts, we build interconnected content hubs that establish your site as the
+              authoritative source on topics your customers are searching. Each piece of content has a specific keyword target,
+              an internal linking role, and a business objective.
+            </p>
+            <p style={{ ...bodyStyle, marginTop: '16px' }}>
+              Our content strategy process maps every page on your site to a keyword opportunity, then fills the gaps with new
+              content designed to rank and convert. We optimize existing content that is underperforming, consolidate pages that
+              are splitting ranking power, and create new content that targets the featured snippet position above standard organic
+              results. The result is a content ecosystem that compounds over time, driving more traffic with every new piece
+              rather than starting from scratch each month.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* Related Services */}
+      <section style={{ background: 'var(--bg-surface)', padding: '80px 0', borderTop: '1px solid var(--border)' }}>
+        <div className="container">
+          <h2 style={{ ...h2Style, marginBottom: '40px' }}>Related Services</h2>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(220px, 1fr))', gap: '32px', maxWidth: '760px' }}>
             <div>
-              <h2 style={{ color: 'var(--text)', fontFamily: 'var(--font-geist, sans-serif)', fontWeight: 700, fontSize: '32px', textTransform: 'uppercase', marginBottom: '24px' }}>
-                What We Do
-              </h2>
-              <p style={{ color: 'var(--text-secondary)', fontFamily: 'var(--font-geist, sans-serif)', fontSize: '16px', lineHeight: '1.8', marginBottom: '20px' }}>
-                Our SEO team combines technical expertise, content strategy, and link building to create a comprehensive approach that produces sustainable, long-term rankings. We do not use shortcuts or black-hat tactics - we build authority the right way.
-              </p>
-              <p style={{ color: 'var(--text-secondary)', fontFamily: 'var(--font-geist, sans-serif)', fontSize: '16px', lineHeight: '1.8' }}>
-                Every strategy starts with deep research into your market, your competitors, and your target audience&apos;s search behavior. Then we build a custom roadmap designed to capture the search queries that drive real business results.
-              </p>
+              <a href="/web-design-development-san-antonio" style={{ color: 'var(--pink)', fontFamily: 'var(--font-geist, sans-serif)', fontWeight: 700, fontSize: '16px', textDecoration: 'none' }}>Web Design</a>
+              <p style={{ color: 'var(--text-muted)', fontFamily: 'var(--font-geist, sans-serif)', fontSize: '14px', marginTop: '6px', lineHeight: '1.6' }}>SEO-ready websites built for speed, performance, and conversion.</p>
             </div>
             <div>
-              <h2 style={{ color: 'var(--text)', fontFamily: 'var(--font-geist, sans-serif)', fontWeight: 700, fontSize: '32px', textTransform: 'uppercase', marginBottom: '24px' }}>
-                Benefits
-              </h2>
-              <ul style={{ listStyle: 'none', display: 'flex', flexDirection: 'column', gap: '16px' }}>
-                {[
-                  'Higher Google rankings for target keywords',
-                  'Increased qualified organic traffic',
-                  'Better local visibility and Google Business Profile',
-                  'Improved website conversion rates',
-                  'Long-term sustainable growth',
-                  'Full transparency with monthly reports',
-                  'Competitive analysis and keyword research',
-                  'Technical SEO and site optimization',
-                ].map(b => (
-                  <li key={b} style={{ display: 'flex', gap: '12px', color: 'var(--text-secondary)', fontFamily: 'var(--font-geist, sans-serif)', fontSize: '15px', alignItems: 'flex-start' }}>
-                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#ff1198" strokeWidth="2.5" style={{ flexShrink: 0, marginTop: '3px' }}>
-                      <path d="M20 6L9 17l-5-5" />
-                    </svg>
-                    {b}
-                  </li>
-                ))}
-              </ul>
+              <a href="/social-media-marketing-san-antonio" style={{ color: 'var(--pink)', fontFamily: 'var(--font-geist, sans-serif)', fontWeight: 700, fontSize: '16px', textDecoration: 'none' }}>Social Media Marketing</a>
+              <p style={{ color: 'var(--text-muted)', fontFamily: 'var(--font-geist, sans-serif)', fontSize: '14px', marginTop: '6px', lineHeight: '1.6' }}>Amplify your content reach across social platforms that matter.</p>
+            </div>
+            <div>
+              <a href="/cpg-marketing-agency" style={{ color: 'var(--pink)', fontFamily: 'var(--font-geist, sans-serif)', fontWeight: 700, fontSize: '16px', textDecoration: 'none' }}>CPG Marketing</a>
+              <p style={{ color: 'var(--text-muted)', fontFamily: 'var(--font-geist, sans-serif)', fontSize: '14px', marginTop: '6px', lineHeight: '1.6' }}>SEO and content strategies built for consumer goods brands.</p>
             </div>
           </div>
         </div>
       </section>
 
-      <section style={{ background: '#ff1198', padding: '60px 0', textAlign: 'center' }}>
+      {/* CTA */}
+      <section style={{ background: 'var(--dark-bg)', padding: '100px 0', textAlign: 'center' }}>
         <div className="container">
-          <h2 style={{ color: 'var(--text)', fontFamily: 'var(--font-geist, sans-serif)', fontWeight: 700, fontSize: 'clamp(24px, 3vw, 40px)', textTransform: 'uppercase', marginBottom: '20px' }}>
-            Ready to Dominate Google?
+          <h2 style={{ color: 'var(--dark-text)', fontFamily: 'var(--font-geist, sans-serif)', fontWeight: 700, fontSize: 'clamp(28px, 4vw, 44px)', marginBottom: '24px', lineHeight: 1.2 }}>
+            Ready to rank where your customers are searching?
           </h2>
-          <p style={{ color: 'rgba(255,255,255,0.85)', fontFamily: 'var(--font-geist, sans-serif)', fontSize: '16px', marginBottom: '32px' }}>
-            Get your free SEO audit and discover where your biggest opportunities are.
+          <p style={{ color: '#aaaaaa', fontFamily: 'var(--font-geist, sans-serif)', fontSize: '17px', marginBottom: '40px' }}>
+            Beast builds SEO programs that drive compounding organic growth.
           </p>
-          <a href="/contact" style={{ display: 'inline-block', background: '#000', color: 'var(--text)', padding: '14px 36px', fontFamily: 'var(--font-geist, sans-serif)', fontWeight: 700, fontSize: '14px', textTransform: 'uppercase', letterSpacing: '0.08em', borderRadius: 0, textDecoration: 'none' }}>
-            Get My Free SEO Audit
+          <a href="/contact" style={{ display: 'inline-block', background: 'var(--pink)', color: '#fff', padding: '16px 40px', fontFamily: 'var(--font-geist, sans-serif)', fontWeight: 700, fontSize: '15px', textTransform: 'uppercase', letterSpacing: '0.08em', textDecoration: 'none' }}>
+            Start Your SEO Strategy
           </a>
         </div>
       </section>

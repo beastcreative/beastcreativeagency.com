@@ -1,393 +1,198 @@
-import Link from 'next/link';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'CPG Marketing Agency | Beast Creative Agency San Antonio',
-  description:
-    'Beast Creative Agency is a leading CPG marketing agency specializing in consumer packaged goods. Data-driven strategies for brand growth, retail distribution, and digital marketing.',
-  alternates: {
-    canonical: 'https://www.beastcreativeagency.com/cpg-marketing-agency/',
-  },
-  openGraph: {
-    title: 'CPG Marketing Agency | Beast Creative Agency',
-    description:
-      'Elevate your CPG brand with data-driven marketing strategies from Beast Creative Agency. Branding, performance marketing, social media, and more.',
-    url: 'https://www.beastcreativeagency.com/cpg-marketing-agency/',
-  },
+  title: 'CPG Marketing Agency | Consumer Packaged Goods Marketing | Beast',
+  description: 'Beast Creative Agency specializes in CPG marketing for food, beverage, and consumer goods brands. National brands trust us for shelf strategy, digital marketing, and brand building.',
+  alternates: { canonical: 'https://www.beastcreativeagency.com/cpg-marketing-agency' },
 };
 
-const services = [
-  {
-    title: 'CPG Branding',
-    desc: 'Elevate your brand identity with strategic branding that resonates with consumers and stands out on the shelf.',
-  },
-  {
-    title: 'CPG Performance Marketing',
-    desc: 'Data-driven paid advertising campaigns across Google, Meta, and retail media networks with transparent attribution.',
-  },
-  {
-    title: 'CPG Social Media',
-    desc: 'Transform consumer engagement with platform-native content strategies that drive brand loyalty and sales.',
-  },
-  {
-    title: 'CPG Digital Marketing',
-    desc: 'Full-funnel digital marketing solutions tailored to the unique challenges of consumer packaged goods brands.',
-  },
-  {
-    title: 'CPG Market Research',
-    desc: 'Data-driven insights that inform your go-to-market strategy, pricing, and product positioning.',
-  },
-  {
-    title: 'Retail Media',
-    desc: 'Win the digital shelf on Walmart Connect, Target Roundel, and Amazon with expert retail media management.',
-  },
-];
+const h2Style = {
+  color: 'var(--text)',
+  fontFamily: 'var(--font-geist, sans-serif)',
+  fontWeight: 700,
+  fontSize: 'clamp(22px, 3vw, 32px)' as string,
+  lineHeight: 1.2,
+  marginBottom: '20px',
+};
 
-const faqs = [
-  {
-    q: 'What is a CPG marketing agency?',
-    a: 'A CPG marketing agency specializes in marketing strategies for consumer packaged goods brands. Unlike generalist agencies, we understand the unique challenges of retail distribution, purchase cycle dynamics, and the competitive shelf environment.',
-  },
-  {
-    q: 'How does Beast Creative Agency help CPG brands grow?',
-    a: 'We combine data-driven performance marketing, strong creative, and retail media expertise to build integrated campaigns that drive both online and in-store sales. Our AI-enhanced optimization ensures your budget works harder.',
-  },
-  {
-    q: 'What CPG categories do you work with?',
-    a: 'We work with CPG brands across food and beverage, health and wellness, beauty, household products, and more. Our strategies adapt to your specific category dynamics and retail partnerships.',
-  },
-  {
-    q: 'How do you measure CPG marketing success?',
-    a: 'We track metrics that matter for CPG: customer acquisition cost, retail velocity, brand lift, repeat purchase rate, and return on ad spend. Radical transparency means you see exactly what your investment is driving.',
-  },
-];
+const bodyStyle = {
+  color: 'var(--text-secondary)',
+  fontFamily: 'var(--font-geist, sans-serif)',
+  fontSize: '17px',
+  lineHeight: '1.8',
+  maxWidth: '760px',
+};
 
-export default function CpgMarketingAgencyPage() {
+export default function CPGMarketingAgencyPage() {
   return (
     <>
       {/* Hero */}
-      <section
-        style={{
-          background: 'var(--bg)',
-          padding: '100px 0 80px',
-          borderBottom: '1px solid var(--border)',
-        }}
-      >
-        <div className="container" style={{ maxWidth: '900px', margin: '0 auto', padding: '0 24px', textAlign: 'center' }}>
-          <span
-            style={{
-              color: '#ff1198',
-              fontFamily: 'Raleway, sans-serif',
-              fontWeight: 700,
-              fontSize: '13px',
-              textTransform: 'uppercase',
-              letterSpacing: '0.1em',
-              display: 'block',
-              marginBottom: '16px',
-            }}
-          >
-            CPG Marketing Agency
+      <section style={{ background: 'var(--bg)', padding: '120px 0 80px', borderBottom: '1px solid var(--border)' }}>
+        <div className="container">
+          <span style={{ color: 'var(--green)', fontFamily: 'var(--font-geist, sans-serif)', fontWeight: 700, fontSize: '12px', textTransform: 'uppercase', letterSpacing: '0.12em', display: 'block', marginBottom: '16px' }}>
+            CPG Marketing
           </span>
-          <h1
-            style={{
-              color: 'var(--text)',
-              fontFamily: 'Raleway, sans-serif',
-              fontWeight: 700,
-              fontSize: 'clamp(28px, 5vw, 60px)',
-              textTransform: 'uppercase',
-              lineHeight: 1.1,
-              marginBottom: '24px',
-            }}
-          >
-            Elevate Your Brand with a Leading CPG Marketing Agency
+          <h1 style={{ color: 'var(--text)', fontFamily: 'var(--font-geist, sans-serif)', fontWeight: 700, fontSize: 'clamp(36px, 5vw, 56px)', lineHeight: 1.1, marginBottom: '24px' }}>
+            CPG Marketing Agency for Food, Beverage &amp; Consumer Brands
           </h1>
-          <p
-            style={{
-              color: 'var(--text-secondary)',
-              fontFamily: 'Raleway, sans-serif',
-              fontSize: '18px',
-              lineHeight: '1.7',
-              marginBottom: '40px',
-              maxWidth: '700px',
-              margin: '0 auto 40px',
-            }}
-          >
-            In the ever-evolving world of consumer packaged goods marketing, brands need a strategic partner to navigate industry trends and consumer behavior. Beast Creative Agency specializes in crafting data-driven marketing strategies that help CPG brands grow profitably.
+          <p style={{ color: 'var(--text-muted)', fontFamily: 'var(--font-geist, sans-serif)', fontSize: '17px', lineHeight: '1.75', maxWidth: '680px' }}>
+            Beast Creative Agency is a specialized CPG marketing agency with deep experience in food, beverage, seasonings, and
+            household consumer goods. We understand the shelf, the retailer buyer, and the consumer. That understanding drives
+            everything we build for CPG brands.
           </p>
-          <div style={{ display: 'flex', gap: '16px', justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a
-              href="/contact"
-              style={{
-                display: 'inline-block',
-                background: '#ff1198',
-                color: 'var(--text)',
-                padding: '14px 36px',
-                fontFamily: 'Raleway, sans-serif',
-                fontWeight: 700,
-                fontSize: '14px',
-                textTransform: 'uppercase',
-                letterSpacing: '0.08em',
-                textDecoration: 'none',
-              }}
-            >
-              Get a Free Assessment
-            </a>
-            <Link
-              href="/services/cpg-marketing"
-              style={{
-                display: 'inline-block',
-                background: 'transparent',
-                color: 'var(--text)',
-                padding: '14px 36px',
-                fontFamily: 'Raleway, sans-serif',
-                fontWeight: 700,
-                fontSize: '14px',
-                textTransform: 'uppercase',
-                letterSpacing: '0.08em',
-                textDecoration: 'none',
-                border: '1px solid var(--border)',
-              }}
-            >
-              Our CPG Services
-            </Link>
-          </div>
         </div>
       </section>
 
-      {/* Why CPG Marketing Matters */}
+      {/* Section 1 */}
       <section style={{ background: 'var(--bg)', padding: '80px 0' }}>
-        <div className="container" style={{ maxWidth: '900px', margin: '0 auto', padding: '0 24px' }}>
-          <div style={{ textAlign: 'center', marginBottom: '60px' }}>
-            <h2
-              style={{
-                color: 'var(--text)',
-                fontFamily: 'Raleway, sans-serif',
-                fontWeight: 700,
-                fontSize: 'clamp(22px, 3vw, 38px)',
-                textTransform: 'uppercase',
-                marginBottom: '20px',
-              }}
-            >
-              Why Top CPG Ad Agencies Matter for Your Growth
-            </h2>
-            <p style={{ color: 'var(--text-secondary)', fontFamily: 'Raleway, sans-serif', fontSize: '16px', lineHeight: '1.7', maxWidth: '700px', margin: '0 auto' }}>
-              Consumer packaged goods brands face unique challenges: crowded retail environments, complex distribution networks, and shrinking consumer attention spans. The right agency partner transforms these challenges into competitive advantages.
+        <div className="container">
+          <div style={{ maxWidth: '760px' }}>
+            <h2 style={h2Style}>What Is a CPG Marketing Agency?</h2>
+            <p style={bodyStyle}>
+              A consumer packaged goods marketing agency is a specialized firm that understands the unique dynamics of
+              selling products that are manufactured at scale, distributed through retail channels, and purchased repeatedly
+              by consumers who are choosing between multiple competing products at the shelf, online, or in both environments
+              simultaneously.
+            </p>
+            <p style={{ ...bodyStyle, marginTop: '16px' }}>
+              CPG marketing is fundamentally different from service business marketing or software marketing. The purchase
+              decision happens in seconds at the shelf or with a scroll in a digital cart. Brand recognition, packaging
+              clarity, price point perception, and shelf adjacency all factor in before the consumer even reads the back
+              panel. A general marketing agency does not understand these dynamics. A CPG marketing agency like Beast does.
+              We know how to build brands that win at the point of decision, whether that decision happens in a grocery
+              aisle or an Amazon search results page.
+            </p>
+            <p style={{ ...bodyStyle, marginTop: '16px' }}>
+              CPG marketing also requires channel coordination that general marketers often miss. Retail promotion strategy,
+              trade marketing materials, shopper marketing programs, DTC digital strategy, and retailer dot-com optimization
+              all need to work together with consistent messaging. Beast builds integrated CPG marketing programs that
+              connect every channel to a single brand strategy and measure performance across all of them.
             </p>
           </div>
+        </div>
+      </section>
 
-          {/* Services Grid */}
-          <div
-            style={{
-              display: 'grid',
-              gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))',
-              gap: '24px',
-            }}
-          >
-            {services.map((svc) => (
-              <div
-                key={svc.title}
-                style={{
-                  background: 'var(--bg-surface)',
-                  border: '1px solid #222',
-                  padding: '32px',
-                }}
-              >
-                <div
-                  style={{
-                    width: '4px',
-                    height: '32px',
-                    background: '#ff1198',
-                    marginBottom: '20px',
-                  }}
-                />
-                <h3
-                  style={{
-                    color: 'var(--text)',
-                    fontFamily: 'Raleway, sans-serif',
-                    fontWeight: 700,
-                    fontSize: '16px',
-                    textTransform: 'uppercase',
-                    marginBottom: '12px',
-                  }}
-                >
-                  {svc.title}
-                </h3>
-                <p style={{ color: 'var(--text-secondary)', fontFamily: 'Raleway, sans-serif', fontSize: '14px', lineHeight: '1.7' }}>
-                  {svc.desc}
-                </p>
-              </div>
-            ))}
+      {/* Section 2 */}
+      <section style={{ background: 'var(--bg-surface)', padding: '80px 0' }}>
+        <div className="container">
+          <div style={{ maxWidth: '760px' }}>
+            <h2 style={h2Style}>How Beast Approaches CPG Brand Building</h2>
+            <p style={bodyStyle}>
+              Beast's approach to CPG brand building starts where every brand decision starts: the consumer. We conduct
+              consumer research to understand who buys in your category, what drives their purchase decisions, what
+              language they use to describe the products they love, and where they are most open to brand discovery.
+              That research informs everything from your packaging claims hierarchy to your TikTok content strategy.
+            </p>
+            <p style={{ ...bodyStyle, marginTop: '16px' }}>
+              From the consumer insight, we build brand positioning that defines the specific territory your brand can
+              own in the category. This is not a generic positioning statement. It is a precise articulation of who
+              your brand is for, what it uniquely delivers, and why the competitor alternatives are not good enough.
+              Sharp positioning is what makes a CPG brand memorable on a shelf crowded with alternatives.
+            </p>
+            <p style={{ ...bodyStyle, marginTop: '16px' }}>
+              From positioning, we build the full brand expression: visual identity, packaging direction, messaging
+              hierarchy, and the digital presence that amplifies and supports the in-store brand experience. Beast
+              manages the full brand architecture for CPG clients, ensuring that every marketing touchpoint, from
+              a shelf talker to a Facebook ad to a recipe blog post, is coordinated around a single, clear brand
+              narrative.
+            </p>
           </div>
         </div>
       </section>
 
-      {/* Data-Driven Section */}
-      <section style={{ background: 'var(--bg-surface)', padding: '80px 0', borderTop: '1px solid var(--border)', borderBottom: '1px solid var(--border)' }}>
-        <div className="container" style={{ maxWidth: '900px', margin: '0 auto', padding: '0 24px' }}>
-          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '60px', alignItems: 'center' }}>
-            <div>
-              <span
-                style={{
-                  color: '#ff1198',
-                  fontFamily: 'Raleway, sans-serif',
-                  fontWeight: 700,
-                  fontSize: '12px',
-                  textTransform: 'uppercase',
-                  letterSpacing: '0.1em',
-                  display: 'block',
-                  marginBottom: '16px',
-                }}
-              >
-                Our Approach
-              </span>
-              <h2
-                style={{
-                  color: 'var(--text)',
-                  fontFamily: 'Raleway, sans-serif',
-                  fontWeight: 700,
-                  fontSize: 'clamp(22px, 2.5vw, 34px)',
-                  textTransform: 'uppercase',
-                  marginBottom: '20px',
-                }}
-              >
-                Data-Driven Insights for CPG Success
-              </h2>
-              <p style={{ color: 'var(--text-secondary)', fontFamily: 'Raleway, sans-serif', fontSize: '16px', lineHeight: '1.8', marginBottom: '20px' }}>
-                We combine deep market research with AI-enhanced campaign optimization to deliver strategies that drive measurable results. Our radical transparency approach means you see exactly what's working - and why.
-              </p>
-              <p style={{ color: 'var(--text-secondary)', fontFamily: 'Raleway, sans-serif', fontSize: '16px', lineHeight: '1.8' }}>
-                From retail media to direct-to-consumer, we build integrated marketing systems that scale with your brand.
-              </p>
-            </div>
-            <div style={{ display: 'flex', flexDirection: 'column', gap: '20px' }}>
-              {[
-                { stat: '3-5x', label: 'Average ROAS improvement' },
-                { stat: '40%', label: 'Average reduction in CAC' },
-                { stat: '100%', label: 'Transparent reporting' },
-              ].map((item) => (
-                <div
-                  key={item.label}
-                  style={{
-                    background: 'var(--bg)',
-                    border: '1px solid #222',
-                    padding: '24px',
-                    display: 'flex',
-                    gap: '20px',
-                    alignItems: 'center',
-                  }}
-                >
-                  <span
-                    style={{
-                      color: '#ff1198',
-                      fontFamily: 'Raleway, sans-serif',
-                      fontWeight: 700,
-                      fontSize: '36px',
-                      lineHeight: 1,
-                      minWidth: '80px',
-                    }}
-                  >
-                    {item.stat}
-                  </span>
-                  <span style={{ color: 'var(--text-secondary)', fontFamily: 'Raleway, sans-serif', fontSize: '14px', textTransform: 'uppercase', letterSpacing: '0.05em' }}>
-                    {item.label}
-                  </span>
-                </div>
-              ))}
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* FAQs */}
+      {/* Section 3 */}
       <section style={{ background: 'var(--bg)', padding: '80px 0' }}>
-        <div className="container" style={{ maxWidth: '860px', margin: '0 auto', padding: '0 24px' }}>
-          <h2
-            style={{
-              color: 'var(--text)',
-              fontFamily: 'Raleway, sans-serif',
-              fontWeight: 700,
-              fontSize: 'clamp(22px, 3vw, 38px)',
-              textTransform: 'uppercase',
-              marginBottom: '48px',
-              textAlign: 'center',
-            }}
-          >
-            Frequently Asked Questions
-          </h2>
-          <div style={{ display: 'flex', flexDirection: 'column', gap: '24px' }}>
-            {faqs.map((faq) => (
-              <div
-                key={faq.q}
-                style={{
-                  background: 'var(--bg-surface)',
-                  border: '1px solid #222',
-                  padding: '32px',
-                }}
-              >
-                <h3
-                  style={{
-                    color: 'var(--text)',
-                    fontFamily: 'Raleway, sans-serif',
-                    fontWeight: 700,
-                    fontSize: '16px',
-                    textTransform: 'uppercase',
-                    marginBottom: '16px',
-                  }}
-                >
-                  {faq.q}
-                </h3>
-                <p style={{ color: 'var(--text-secondary)', fontFamily: 'Raleway, sans-serif', fontSize: '15px', lineHeight: '1.7', margin: 0 }}>
-                  {faq.a}
-                </p>
-              </div>
-            ))}
+        <div className="container">
+          <div style={{ maxWidth: '760px' }}>
+            <h2 style={h2Style}>CPG Digital Marketing: From Shelf to Screen</h2>
+            <p style={bodyStyle}>
+              CPG digital marketing in 2024 requires a multi-channel strategy that connects in-store presence with
+              digital discovery, content marketing, and performance advertising. Beast builds CPG digital programs
+              that span the full consumer journey.
+            </p>
+            <p style={{ ...bodyStyle, marginTop: '16px' }}>
+              For discovery, we build SEO-optimized recipe and content marketing programs that put your brand in front
+              of consumers when they are actively searching for meal solutions, ingredients, and product recommendations.
+              Recipe content is one of the most underutilized CPG digital channels. A well-optimized recipe blog can
+              drive tens of thousands of monthly organic visits that convert to both DTC sales and retail awareness.
+            </p>
+            <p style={{ ...bodyStyle, marginTop: '16px' }}>
+              For conversion, we build DTC e-commerce experiences and Amazon listing optimization that capture demand
+              from consumers already looking to buy. We optimize product titles, bullet points, A+ content, and sponsored
+              ad campaigns to maximize both organic ranking and paid visibility on Amazon. For retailer dot-com platforms
+              like Walmart.com, Kroger.com, and HEB.com, we build and optimize digital shelf content that converts
+              online grocery shoppers.
+            </p>
+            <p style={{ ...bodyStyle, marginTop: '16px' }}>
+              For retention and advocacy, we build email marketing programs, social media content strategies, and
+              community management programs that keep your brand in front of existing customers between purchase
+              occasions and turn satisfied buyers into brand advocates.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* Section 4 */}
+      <section style={{ background: 'var(--bg-surface)', padding: '80px 0' }}>
+        <div className="container">
+          <div style={{ maxWidth: '760px' }}>
+            <h2 style={h2Style}>Our CPG Clients &amp; Results</h2>
+            <p style={bodyStyle}>
+              Beast has worked with CPG brands across food, beverage, seasonings, and baking categories at the national
+              level. Our CPG client experience includes work with Williams Foods, the manufacturer behind Pioneer Brand and
+              Sun-Bird Seasonings, two national brands with strong retail distribution across major grocery chains.
+              We have also worked with Tribeca Oven, a specialty bakery brand, supporting brand strategy and digital
+              marketing programs for their retail and foodservice channels.
+            </p>
+            <p style={{ ...bodyStyle, marginTop: '16px' }}>
+              These client relationships have given Beast direct experience with the realities of national CPG brand
+              management: retailer compliance requirements, packaging spec processes, promotional calendar coordination,
+              and the multi-stakeholder approval processes that large CPG organizations require. We understand how to
+              move quickly within CPG constraints and deliver work that meets both brand standards and retailer
+              requirements.
+            </p>
+            <p style={{ ...bodyStyle, marginTop: '16px' }}>
+              Whether you are a regional CPG brand looking to expand retail distribution, a national brand refreshing
+              your digital presence, or a startup food brand building from the ground up, Beast brings the category
+              experience, strategic rigor, and creative execution capability to build a CPG marketing program that
+              drives shelf placement, consumer trial, and repeat purchase.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* Related Services */}
+      <section style={{ background: 'var(--bg)', padding: '80px 0', borderTop: '1px solid var(--border)' }}>
+        <div className="container">
+          <h2 style={{ ...h2Style, marginBottom: '40px' }}>Related Services</h2>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(220px, 1fr))', gap: '32px', maxWidth: '760px' }}>
+            <div>
+              <a href="/branding-agency-san-antonio" style={{ color: 'var(--pink)', fontFamily: 'var(--font-geist, sans-serif)', fontWeight: 700, fontSize: '16px', textDecoration: 'none' }}>Branding</a>
+              <p style={{ color: 'var(--text-muted)', fontFamily: 'var(--font-geist, sans-serif)', fontSize: '14px', marginTop: '6px', lineHeight: '1.6' }}>Build a CPG brand identity that wins on shelf and online.</p>
+            </div>
+            <div>
+              <a href="/services/cpg-marketing" style={{ color: 'var(--pink)', fontFamily: 'var(--font-geist, sans-serif)', fontWeight: 700, fontSize: '16px', textDecoration: 'none' }}>CPG Marketing Services</a>
+              <p style={{ color: 'var(--text-muted)', fontFamily: 'var(--font-geist, sans-serif)', fontSize: '14px', marginTop: '6px', lineHeight: '1.6' }}>See our full CPG marketing service capabilities.</p>
+            </div>
+            <div>
+              <a href="/seo-agency-san-antonio" style={{ color: 'var(--pink)', fontFamily: 'var(--font-geist, sans-serif)', fontWeight: 700, fontSize: '16px', textDecoration: 'none' }}>SEO Services</a>
+              <p style={{ color: 'var(--text-muted)', fontFamily: 'var(--font-geist, sans-serif)', fontSize: '14px', marginTop: '6px', lineHeight: '1.6' }}>Drive organic traffic to your CPG brand's digital presence.</p>
+            </div>
           </div>
         </div>
       </section>
 
       {/* CTA */}
-      <section style={{ background: '#ff1198', padding: '80px 0', textAlign: 'center' }}>
+      <section style={{ background: 'var(--dark-bg)', padding: '100px 0', textAlign: 'center' }}>
         <div className="container">
-          <h2
-            style={{
-              color: 'var(--text)',
-              fontFamily: 'Raleway, sans-serif',
-              fontWeight: 700,
-              fontSize: 'clamp(24px, 3vw, 44px)',
-              textTransform: 'uppercase',
-              marginBottom: '20px',
-            }}
-          >
-            Partner with Beast Creative Agency
+          <h2 style={{ color: 'var(--dark-text)', fontFamily: 'var(--font-geist, sans-serif)', fontWeight: 700, fontSize: 'clamp(28px, 4vw, 44px)', marginBottom: '24px', lineHeight: 1.2 }}>
+            Ready to grow your CPG brand on shelf and online?
           </h2>
-          <p
-            style={{
-              color: 'rgba(255,255,255,0.85)',
-              fontFamily: 'Raleway, sans-serif',
-              fontSize: '18px',
-              marginBottom: '40px',
-              maxWidth: '600px',
-              margin: '0 auto 40px',
-            }}
-          >
-            Ready to transform your CPG marketing? Get a free assessment and discover what data-driven marketing can do for your brand.
+          <p style={{ color: '#aaaaaa', fontFamily: 'var(--font-geist, sans-serif)', fontSize: '17px', marginBottom: '40px' }}>
+            Beast knows CPG. Let us build the strategy that drives your next growth phase.
           </p>
-          <a
-            href="/contact"
-            style={{
-              display: 'inline-block',
-              background: '#000',
-              color: 'var(--text)',
-              padding: '16px 48px',
-              fontFamily: 'Raleway, sans-serif',
-              fontWeight: 700,
-              fontSize: '14px',
-              textTransform: 'uppercase',
-              letterSpacing: '0.08em',
-              textDecoration: 'none',
-            }}
-          >
-            Get a Free Assessment
+          <a href="/contact" style={{ display: 'inline-block', background: 'var(--pink)', color: '#fff', padding: '16px 40px', fontFamily: 'var(--font-geist, sans-serif)', fontWeight: 700, fontSize: '15px', textTransform: 'uppercase', letterSpacing: '0.08em', textDecoration: 'none' }}>
+            Talk to Our CPG Team
           </a>
         </div>
       </section>
