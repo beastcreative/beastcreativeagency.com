@@ -15,9 +15,9 @@ export default function BlogPage() {
       {/* Hero */}
       <section
         style={{
-          background: '#0c0c0c',
+          background: 'var(--bg)',
           padding: '100px 0 60px',
-          borderBottom: '1px solid #1a1a1a',
+          borderBottom: '1px solid var(--border)',
         }}
       >
         <div className="container">
@@ -38,7 +38,7 @@ export default function BlogPage() {
             </span>
             <h1
               style={{
-                color: '#fff',
+                color: 'var(--text)',
                 fontFamily: 'Raleway, sans-serif',
                 fontWeight: 700,
                 fontSize: 'clamp(32px, 5vw, 56px)',
@@ -51,7 +51,7 @@ export default function BlogPage() {
             </h1>
             <p
               style={{
-                color: '#aaa',
+                color: 'var(--text-secondary)',
                 fontFamily: 'Raleway, sans-serif',
                 fontSize: '18px',
                 lineHeight: '1.7',
@@ -64,7 +64,7 @@ export default function BlogPage() {
       </section>
 
       {/* Blog Posts */}
-      <section style={{ background: '#0c0c0c', padding: '80px 0' }}>
+      <section style={{ background: 'var(--bg)', padding: '80px 0' }}>
         <div className="container">
           <div
             style={{
@@ -77,7 +77,7 @@ export default function BlogPage() {
               <article
                 key={post.slug}
                 style={{
-                  background: '#111',
+                  background: 'var(--bg-surface)',
                   border: '1px solid #222',
                   padding: '32px',
                   display: 'flex',
@@ -89,7 +89,7 @@ export default function BlogPage() {
                   <span
                     style={{
                       background: '#ff1198',
-                      color: '#fff',
+                      color: 'var(--text)',
                       fontFamily: 'Raleway, sans-serif',
                       fontWeight: 700,
                       fontSize: '11px',
@@ -112,7 +112,7 @@ export default function BlogPage() {
                 </div>
                 <h2
                   style={{
-                    color: '#fff',
+                    color: 'var(--text)',
                     fontFamily: 'Raleway, sans-serif',
                     fontWeight: 700,
                     fontSize: '18px',
@@ -125,7 +125,7 @@ export default function BlogPage() {
                 </h2>
                 <p
                   style={{
-                    color: '#aaa',
+                    color: 'var(--text-secondary)',
                     fontFamily: 'Raleway, sans-serif',
                     fontSize: '14px',
                     lineHeight: '1.7',
@@ -172,7 +172,7 @@ export default function BlogPage() {
         <div className="container">
           <h2
             style={{
-              color: '#fff',
+              color: 'var(--text)',
               fontFamily: 'Raleway, sans-serif',
               fontWeight: 700,
               fontSize: 'clamp(24px, 3vw, 40px)',
@@ -197,7 +197,7 @@ export default function BlogPage() {
             style={{
               display: 'inline-block',
               background: '#000',
-              color: '#fff',
+              color: 'var(--text)',
               padding: '14px 36px',
               fontFamily: 'Raleway, sans-serif',
               fontWeight: 700,

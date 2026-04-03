@@ -51,16 +51,16 @@ export default function ServicesPage() {
   return (
     <>
       {/* Hero */}
-      <section style={{ background: '#0c0c0c', padding: '100px 0 60px', borderBottom: '1px solid #1a1a1a' }}>
+      <section style={{ background: 'var(--bg)', padding: '100px 0 60px', borderBottom: '1px solid var(--border)' }}>
         <div className="container">
           <div style={{ maxWidth: '700px' }}>
             <span style={{ color: '#ff1198', fontFamily: 'Raleway, sans-serif', fontWeight: 700, fontSize: '13px', textTransform: 'uppercase', letterSpacing: '0.1em', display: 'block', marginBottom: '16px' }}>
               Our Services
             </span>
-            <h1 style={{ color: '#fff', fontFamily: 'Raleway, sans-serif', fontWeight: 700, fontSize: 'clamp(32px, 5vw, 56px)', textTransform: 'uppercase', lineHeight: 1.1, marginBottom: '24px' }}>
+            <h1 style={{ color: 'var(--text)', fontFamily: 'Raleway, sans-serif', fontWeight: 700, fontSize: 'clamp(32px, 5vw, 56px)', textTransform: 'uppercase', lineHeight: 1.1, marginBottom: '24px' }}>
               Full-Service Digital Marketing
             </h1>
-            <p style={{ color: '#aaa', fontFamily: 'Raleway, sans-serif', fontSize: '18px', lineHeight: '1.7', marginBottom: '40px' }}>
+            <p style={{ color: 'var(--text-secondary)', fontFamily: 'Raleway, sans-serif', fontSize: '18px', lineHeight: '1.7', marginBottom: '40px' }}>
               From strategy to execution, we provide every service your brand needs to dominate the digital landscape.
             </p>
             <CTAButton href="/contact">Get a Free Assessment</CTAButton>
@@ -69,7 +69,7 @@ export default function ServicesPage() {
       </section>
 
       {/* Services Grid */}
-      <section style={{ background: '#0c0c0c', padding: '80px 0' }}>
+      <section style={{ background: 'var(--bg)', padding: '80px 0' }}>
         <div className="container">
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '24px' }}>
             <ServiceCard
@@ -121,14 +121,14 @@ export default function ServicesPage() {
       {/* CTA */}
       <section style={{ background: '#ff1198', padding: '80px 0', textAlign: 'center' }}>
         <div className="container">
-          <h2 style={{ color: '#fff', fontFamily: 'Raleway, sans-serif', fontWeight: 700, fontSize: 'clamp(28px, 4vw, 48px)', textTransform: 'uppercase', marginBottom: '20px' }}>
+          <h2 style={{ color: 'var(--text)', fontFamily: 'Raleway, sans-serif', fontWeight: 700, fontSize: 'clamp(28px, 4vw, 48px)', textTransform: 'uppercase', marginBottom: '20px' }}>
             Not Sure Where to Start?
           </h2>
           <p style={{ color: 'rgba(255,255,255,0.85)', fontFamily: 'Raleway, sans-serif', fontSize: '18px', maxWidth: '600px', margin: '0 auto 40px', lineHeight: '1.7' }}>
             Get a free marketing assessment and we will tell you exactly where your biggest opportunities are.
           </p>
           <a href="/contact"
-            style={{ display: 'inline-block', background: '#000', color: '#fff', padding: '16px 40px', fontFamily: 'Raleway, sans-serif', fontWeight: 700, fontSize: '15px', textTransform: 'uppercase', letterSpacing: '0.08em', borderRadius: 0, textDecoration: 'none' }}>
+            style={{ display: 'inline-block', background: '#000', color: 'var(--text)', padding: '16px 40px', fontFamily: 'Raleway, sans-serif', fontWeight: 700, fontSize: '15px', textTransform: 'uppercase', letterSpacing: '0.08em', borderRadius: 0, textDecoration: 'none' }}>
             Get My Free Assessment
           </a>
         </div>

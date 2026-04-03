@@ -14,8 +14,8 @@ export default function CTAButton({ href, children, text, style }: CTAButtonProp
     <Link href={href}
       style={{
         display: 'inline-block',
-        background: '#ff1198',
-        color: '#fff',
+        background: 'var(--pink)',
+        color: 'var(--dark-text)',
         padding: '14px 32px',
         fontFamily: 'Raleway, sans-serif',
         fontWeight: 700,
@@ -29,8 +29,8 @@ export default function CTAButton({ href, children, text, style }: CTAButtonProp
         textDecoration: 'none',
         ...style,
       }}
-      onMouseEnter={e => (e.currentTarget.style.background = '#d4007d')}
-      onMouseLeave={e => (e.currentTarget.style.background = '#ff1198')}>
+      onMouseEnter={e => (e.currentTarget.style.background = 'var(--pink-hover)')}
+      onMouseLeave={e => (e.currentTarget.style.background = 'var(--pink)')}>
       {children ?? text}
     </Link>
   );

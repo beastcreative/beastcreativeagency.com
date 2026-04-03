@@ -45,9 +45,9 @@ export default async function BlogPostPage({ params }: Props) {
       {/* Hero */}
       <section
         style={{
-          background: '#0c0c0c',
+          background: 'var(--bg)',
           padding: '100px 0 60px',
-          borderBottom: '1px solid #1a1a1a',
+          borderBottom: '1px solid var(--border)',
         }}
       >
         <div className="container" style={{ maxWidth: '860px', margin: '0 auto', padding: '0 24px' }}>
@@ -55,7 +55,7 @@ export default async function BlogPostPage({ params }: Props) {
             <span
               style={{
                 background: '#ff1198',
-                color: '#fff',
+                color: 'var(--text)',
                 fontFamily: 'Raleway, sans-serif',
                 fontWeight: 700,
                 fontSize: '11px',
@@ -78,7 +78,7 @@ export default async function BlogPostPage({ params }: Props) {
           </div>
           <h1
             style={{
-              color: '#fff',
+              color: 'var(--text)',
               fontFamily: 'Raleway, sans-serif',
               fontWeight: 700,
               fontSize: 'clamp(26px, 4vw, 48px)',
@@ -91,7 +91,7 @@ export default async function BlogPostPage({ params }: Props) {
           </h1>
           <p
             style={{
-              color: '#aaa',
+              color: 'var(--text-secondary)',
               fontFamily: 'Raleway, sans-serif',
               fontSize: '18px',
               lineHeight: '1.7',
@@ -104,7 +104,7 @@ export default async function BlogPostPage({ params }: Props) {
       </section>
 
       {/* Post Content */}
-      <section style={{ background: '#0c0c0c', padding: '60px 0 100px' }}>
+      <section style={{ background: 'var(--bg)', padding: '60px 0 100px' }}>
         <div className="container" style={{ maxWidth: '860px', margin: '0 auto', padding: '0 24px' }}>
           <article className="blog-content">
             <MDXRemote source={post.content} />
@@ -141,7 +141,7 @@ export default async function BlogPostPage({ params }: Props) {
         <div className="container">
           <h2
             style={{
-              color: '#fff',
+              color: 'var(--text)',
               fontFamily: 'Raleway, sans-serif',
               fontWeight: 700,
               fontSize: 'clamp(24px, 3vw, 40px)',
@@ -166,7 +166,7 @@ export default async function BlogPostPage({ params }: Props) {
             style={{
               display: 'inline-block',
               background: '#000',
-              color: '#fff',
+              color: 'var(--text)',
               padding: '14px 36px',
               fontFamily: 'Raleway, sans-serif',
               fontWeight: 700,

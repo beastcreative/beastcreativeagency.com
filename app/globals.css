@@ -9,9 +9,38 @@
 }
 
 :root {
-  --pink: #ff1198;
-  --pink-hover: #ff8fce;
-  --bg: #0c0c0c;
+  /* Theme — Light (default) */
+  --bg:             #ffffff;
+  --bg-surface:     #f5f5f5;
+  --bg-elevated:    #ebebeb;
+  --border:         #e5e5e5;
+  --border-muted:   #f0f0f0;
+  --text:           #0a0a0a;
+  --text-secondary: #555555;
+  --text-muted:     #888888;
+
+  /* Brand — never changes */
+  --pink:           #ff1198;
+  --pink-hover:     #ff006e;
+  --green:          #00f763;
+
+  /* Dark sections (marquee, footer, CTA) — always dark regardless of theme */
+  --dark-bg:        #0a0a0a;
+  --dark-surface:   #121212;
+  --dark-border:    #1e1e1e;
+  --dark-text:      #ffffff;
+  --dark-muted:     #757575;
+}
+
+.dark-theme {
+  --bg:             #0a0a0a;
+  --bg-surface:     #121212;
+  --bg-elevated:    #1a1a1a;
+  --border:         #1e1e1e;
+  --border-muted:   #2a2a2a;
+  --text:           #ffffff;
+  --text-secondary: #aaaaaa;
+  --text-muted:     #757575;
 }
 
 * {
@@ -21,8 +50,8 @@
 }
 
 body {
-  background: #ffffff;
-  color: #0a0a0a;
+  background: var(--bg);
+  color: var(--text);
   font-family: var(--font-geist, 'Raleway', sans-serif);
   font-weight: 400;
   font-size: 16px;
@@ -89,7 +118,7 @@ a:hover {
 
 /* Blog post content styles */
 .blog-content {
-  color: #ccc;
+  color: var(--text-secondary);
   font-family: Raleway, sans-serif;
   font-size: 17px;
   line-height: 1.8;
@@ -97,7 +126,7 @@ a:hover {
 
 .blog-content p {
   margin: 0 0 20px;
-  color: #ccc;
+  color: var(--text-secondary);
 }
 
 .blog-content h1,
@@ -106,7 +135,7 @@ a:hover {
 .blog-content h4,
 .blog-content h5,
 .blog-content h6 {
-  color: #fff;
+  color: var(--text);
   font-family: Raleway, sans-serif;
   font-weight: 700;
   text-transform: uppercase;
@@ -119,14 +148,14 @@ a:hover {
 .blog-content h4 { font-size: 18px; }
 
 .blog-content strong {
-  color: #fff;
+  color: var(--text);
   font-weight: 700;
 }
 
 .blog-content ul,
 .blog-content ol {
   margin: 0 0 20px 24px;
-  color: #ccc;
+  color: var(--text-secondary);
 }
 
 .blog-content li {
@@ -140,15 +169,15 @@ a:hover {
 }
 
 .blog-content a:hover {
-  color: #fff;
+  color: var(--text);
 }
 
 .blog-content blockquote {
   border-left: 3px solid #ff1198;
   margin: 24px 0;
   padding: 12px 24px;
-  background: #111;
-  color: #aaa;
+  background: var(--bg-surface);
+  color: var(--text-secondary);
   font-style: italic;
 }
 
@@ -161,14 +190,14 @@ a:hover {
 
 .blog-content hr {
   border: none;
-  border-top: 1px solid #222;
+  border-top: 1px solid var(--border);
   margin: 40px 0;
 }
 
 .blog-content pre,
 .blog-content code {
   font-family: 'Courier New', monospace;
-  background: #1a1a1a;
+  background: var(--bg-elevated);
   padding: 2px 6px;
   border-radius: 3px;
   font-size: 14px;

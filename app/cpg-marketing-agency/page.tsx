@@ -65,9 +65,9 @@ export default function CpgMarketingAgencyPage() {
       {/* Hero */}
       <section
         style={{
-          background: '#0c0c0c',
+          background: 'var(--bg)',
           padding: '100px 0 80px',
-          borderBottom: '1px solid #1a1a1a',
+          borderBottom: '1px solid var(--border)',
         }}
       >
         <div className="container" style={{ maxWidth: '900px', margin: '0 auto', padding: '0 24px', textAlign: 'center' }}>
@@ -87,7 +87,7 @@ export default function CpgMarketingAgencyPage() {
           </span>
           <h1
             style={{
-              color: '#fff',
+              color: 'var(--text)',
               fontFamily: 'Raleway, sans-serif',
               fontWeight: 700,
               fontSize: 'clamp(28px, 5vw, 60px)',
@@ -100,7 +100,7 @@ export default function CpgMarketingAgencyPage() {
           </h1>
           <p
             style={{
-              color: '#aaa',
+              color: 'var(--text-secondary)',
               fontFamily: 'Raleway, sans-serif',
               fontSize: '18px',
               lineHeight: '1.7',
@@ -117,7 +117,7 @@ export default function CpgMarketingAgencyPage() {
               style={{
                 display: 'inline-block',
                 background: '#ff1198',
-                color: '#fff',
+                color: 'var(--text)',
                 padding: '14px 36px',
                 fontFamily: 'Raleway, sans-serif',
                 fontWeight: 700,
@@ -134,7 +134,7 @@ export default function CpgMarketingAgencyPage() {
               style={{
                 display: 'inline-block',
                 background: 'transparent',
-                color: '#fff',
+                color: 'var(--text)',
                 padding: '14px 36px',
                 fontFamily: 'Raleway, sans-serif',
                 fontWeight: 700,
@@ -142,7 +142,7 @@ export default function CpgMarketingAgencyPage() {
                 textTransform: 'uppercase',
                 letterSpacing: '0.08em',
                 textDecoration: 'none',
-                border: '1px solid #333',
+                border: '1px solid var(--border)',
               }}
             >
               Our CPG Services
@@ -152,12 +152,12 @@ export default function CpgMarketingAgencyPage() {
       </section>
 
       {/* Why CPG Marketing Matters */}
-      <section style={{ background: '#0c0c0c', padding: '80px 0' }}>
+      <section style={{ background: 'var(--bg)', padding: '80px 0' }}>
         <div className="container" style={{ maxWidth: '900px', margin: '0 auto', padding: '0 24px' }}>
           <div style={{ textAlign: 'center', marginBottom: '60px' }}>
             <h2
               style={{
-                color: '#fff',
+                color: 'var(--text)',
                 fontFamily: 'Raleway, sans-serif',
                 fontWeight: 700,
                 fontSize: 'clamp(22px, 3vw, 38px)',
@@ -167,7 +167,7 @@ export default function CpgMarketingAgencyPage() {
             >
               Why Top CPG Ad Agencies Matter for Your Growth
             </h2>
-            <p style={{ color: '#aaa', fontFamily: 'Raleway, sans-serif', fontSize: '16px', lineHeight: '1.7', maxWidth: '700px', margin: '0 auto' }}>
+            <p style={{ color: 'var(--text-secondary)', fontFamily: 'Raleway, sans-serif', fontSize: '16px', lineHeight: '1.7', maxWidth: '700px', margin: '0 auto' }}>
               Consumer packaged goods brands face unique challenges: crowded retail environments, complex distribution networks, and shrinking consumer attention spans. The right agency partner transforms these challenges into competitive advantages.
             </p>
           </div>
@@ -184,7 +184,7 @@ export default function CpgMarketingAgencyPage() {
               <div
                 key={svc.title}
                 style={{
-                  background: '#111',
+                  background: 'var(--bg-surface)',
                   border: '1px solid #222',
                   padding: '32px',
                 }}
@@ -199,7 +199,7 @@ export default function CpgMarketingAgencyPage() {
                 />
                 <h3
                   style={{
-                    color: '#fff',
+                    color: 'var(--text)',
                     fontFamily: 'Raleway, sans-serif',
                     fontWeight: 700,
                     fontSize: '16px',
@@ -209,7 +209,7 @@ export default function CpgMarketingAgencyPage() {
                 >
                   {svc.title}
                 </h3>
-                <p style={{ color: '#aaa', fontFamily: 'Raleway, sans-serif', fontSize: '14px', lineHeight: '1.7' }}>
+                <p style={{ color: 'var(--text-secondary)', fontFamily: 'Raleway, sans-serif', fontSize: '14px', lineHeight: '1.7' }}>
                   {svc.desc}
                 </p>
               </div>
@@ -219,7 +219,7 @@ export default function CpgMarketingAgencyPage() {
       </section>
 
       {/* Data-Driven Section */}
-      <section style={{ background: '#111', padding: '80px 0', borderTop: '1px solid #1a1a1a', borderBottom: '1px solid #1a1a1a' }}>
+      <section style={{ background: 'var(--bg-surface)', padding: '80px 0', borderTop: '1px solid var(--border)', borderBottom: '1px solid var(--border)' }}>
         <div className="container" style={{ maxWidth: '900px', margin: '0 auto', padding: '0 24px' }}>
           <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '60px', alignItems: 'center' }}>
             <div>
@@ -239,7 +239,7 @@ export default function CpgMarketingAgencyPage() {
               </span>
               <h2
                 style={{
-                  color: '#fff',
+                  color: 'var(--text)',
                   fontFamily: 'Raleway, sans-serif',
                   fontWeight: 700,
                   fontSize: 'clamp(22px, 2.5vw, 34px)',
@@ -249,10 +249,10 @@ export default function CpgMarketingAgencyPage() {
               >
                 Data-Driven Insights for CPG Success
               </h2>
-              <p style={{ color: '#aaa', fontFamily: 'Raleway, sans-serif', fontSize: '16px', lineHeight: '1.8', marginBottom: '20px' }}>
+              <p style={{ color: 'var(--text-secondary)', fontFamily: 'Raleway, sans-serif', fontSize: '16px', lineHeight: '1.8', marginBottom: '20px' }}>
                 We combine deep market research with AI-enhanced campaign optimization to deliver strategies that drive measurable results. Our radical transparency approach means you see exactly what's working - and why.
               </p>
-              <p style={{ color: '#aaa', fontFamily: 'Raleway, sans-serif', fontSize: '16px', lineHeight: '1.8' }}>
+              <p style={{ color: 'var(--text-secondary)', fontFamily: 'Raleway, sans-serif', fontSize: '16px', lineHeight: '1.8' }}>
                 From retail media to direct-to-consumer, we build integrated marketing systems that scale with your brand.
               </p>
             </div>
@@ -265,7 +265,7 @@ export default function CpgMarketingAgencyPage() {
                 <div
                   key={item.label}
                   style={{
-                    background: '#0c0c0c',
+                    background: 'var(--bg)',
                     border: '1px solid #222',
                     padding: '24px',
                     display: 'flex',
@@ -285,7 +285,7 @@ export default function CpgMarketingAgencyPage() {
                   >
                     {item.stat}
                   </span>
-                  <span style={{ color: '#aaa', fontFamily: 'Raleway, sans-serif', fontSize: '14px', textTransform: 'uppercase', letterSpacing: '0.05em' }}>
+                  <span style={{ color: 'var(--text-secondary)', fontFamily: 'Raleway, sans-serif', fontSize: '14px', textTransform: 'uppercase', letterSpacing: '0.05em' }}>
                     {item.label}
                   </span>
                 </div>
@@ -296,11 +296,11 @@ export default function CpgMarketingAgencyPage() {
       </section>
 
       {/* FAQs */}
-      <section style={{ background: '#0c0c0c', padding: '80px 0' }}>
+      <section style={{ background: 'var(--bg)', padding: '80px 0' }}>
         <div className="container" style={{ maxWidth: '860px', margin: '0 auto', padding: '0 24px' }}>
           <h2
             style={{
-              color: '#fff',
+              color: 'var(--text)',
               fontFamily: 'Raleway, sans-serif',
               fontWeight: 700,
               fontSize: 'clamp(22px, 3vw, 38px)',
@@ -316,14 +316,14 @@ export default function CpgMarketingAgencyPage() {
               <div
                 key={faq.q}
                 style={{
-                  background: '#111',
+                  background: 'var(--bg-surface)',
                   border: '1px solid #222',
                   padding: '32px',
                 }}
               >
                 <h3
                   style={{
-                    color: '#fff',
+                    color: 'var(--text)',
                     fontFamily: 'Raleway, sans-serif',
                     fontWeight: 700,
                     fontSize: '16px',
@@ -333,7 +333,7 @@ export default function CpgMarketingAgencyPage() {
                 >
                   {faq.q}
                 </h3>
-                <p style={{ color: '#aaa', fontFamily: 'Raleway, sans-serif', fontSize: '15px', lineHeight: '1.7', margin: 0 }}>
+                <p style={{ color: 'var(--text-secondary)', fontFamily: 'Raleway, sans-serif', fontSize: '15px', lineHeight: '1.7', margin: 0 }}>
                   {faq.a}
                 </p>
               </div>
@@ -347,7 +347,7 @@ export default function CpgMarketingAgencyPage() {
         <div className="container">
           <h2
             style={{
-              color: '#fff',
+              color: 'var(--text)',
               fontFamily: 'Raleway, sans-serif',
               fontWeight: 700,
               fontSize: 'clamp(24px, 3vw, 44px)',
@@ -374,7 +374,7 @@ export default function CpgMarketingAgencyPage() {
             style={{
               display: 'inline-block',
               background: '#000',
-              color: '#fff',
+              color: 'var(--text)',
               padding: '16px 48px',
               fontFamily: 'Raleway, sans-serif',
               fontWeight: 700,
