@@ -206,14 +206,14 @@ export default function HomePage() {
       >
         <div className="container">
           <FadeUp>
-            <h1 className="hero-wordmark">
+            <p className="hero-wordmark">
               BSTCRTV
-            </h1>
+            </p>
           </FadeUp>
           <FadeUp delay={0.12}>
-            <p className="hero-tagline">
+            <h1 className="hero-tagline">
               San Antonio&apos;s Full-Service Marketing Agency
-            </p>
+            </h1>
           </FadeUp>
           <FadeUp delay={0.22}>
             <Link href="/contact" className="hero-cta">
