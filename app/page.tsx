@@ -124,12 +124,12 @@ export default function HomePage() {
       <section
         style={{
           background: '#ffffff',
-          minHeight: '100vh',
           display: 'flex',
           alignItems: 'center',
           position: 'relative',
           overflow: 'hidden',
-          paddingTop: '80px',
+          paddingTop: '140px',
+          paddingBottom: '100px',
         }}
       >
         {/* Background BST watermark */}
@@ -174,7 +174,7 @@ export default function HomePage() {
             <h1
               style={{
                 fontFamily: 'var(--font-geist, sans-serif)',
-                fontSize: 'clamp(60px, 8vw, 100px)',
+                fontSize: 'clamp(40px, 5.5vw, 72px)',
                 fontWeight: 700,
                 color: '#0a0a0a',
                 lineHeight: '1.0',
