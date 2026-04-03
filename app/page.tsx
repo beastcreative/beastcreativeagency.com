@@ -207,7 +207,7 @@ export default function HomePage() {
         <div className="container">
           <FadeUp>
             <h1 className="hero-wordmark">
-              BSTCRTV<span className="hero-reg">&#174;</span>
+              BSTCRTV
             </h1>
           </FadeUp>
           <FadeUp delay={0.12}>
@@ -596,7 +596,7 @@ export default function HomePage() {
 
         /* ── Logo Scroll ── */
         .logo-scroll-section {
-          background: #0a0a0a;
+          background: #ffffff;
           padding: 28px 0;
           overflow: hidden;
           border-top: 1px solid #1e1e1e;
@@ -627,7 +627,7 @@ export default function HomePage() {
         .logo-scroll-img {
           height: 36px;
           width: auto;
-          filter: grayscale(100%) brightness(0.8);
+          filter: grayscale(100%) brightness(0) invert(0) opacity(0.25);
           display: inline-block;
           margin: 0 60px;
           flex-shrink: 0;
