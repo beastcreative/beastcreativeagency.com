@@ -115,7 +115,7 @@ function CtaSection() {
         background: '#0a0a0a',
         padding: '120px 0',
         textAlign: 'center',
-        borderTop: '1px solid #1e1e1e',
+        borderTop: '1px solid #e5e5e5',
       }}
     >
       <div className="container">
@@ -227,7 +227,6 @@ export default function HomePage() {
           SECTION 2 — LOGO SCROLL
       ══════════════════════════════════════════════ */}
       <section className="logo-scroll-section">
-        <p className="logo-scroll-label">Trusted by brands across Texas</p>
         <div className="logo-scroll-viewport">
           <div className="logo-scroll-track">
             {/* First set */}
@@ -263,7 +262,6 @@ export default function HomePage() {
       ══════════════════════════════════════════════ */}
 
       {/* ────── OPTION A ────── */}
-      <DesignLabel label="— Design Option A —" />
 
       <section data-design="a" style={{ background: '#ffffff' }}>
         {/* Services numbered list */}
@@ -337,217 +335,6 @@ export default function HomePage() {
         <CtaSection />
       </section>
 
-      {/* ────── OPTION B ────── */}
-      <DesignLabel label="— Design Option B —" />
-
-      <section data-design="b" style={{ background: '#ffffff' }}>
-        {/* Case study cards */}
-        <div style={{ padding: '80px 0 60px' }}>
-          <div className="container">
-            <FadeUp>
-              <p
-                style={{
-                  fontFamily: 'var(--font-geist, sans-serif)',
-                  fontSize: '11px',
-                  fontWeight: 500,
-                  color: '#888888',
-                  textTransform: 'uppercase',
-                  letterSpacing: '0.14em',
-                  marginBottom: '48px',
-                }}
-              >
-                Selected Work
-              </p>
-            </FadeUp>
-            <div className="work-grid">
-              <FadeUp>
-                <WorkCard
-                  title="CHG - Consumer Health Group"
-                  description="15+ national food brands. 900+ recipes. Consolidated digital presence that scales."
-                  tag="CPG Marketing"
-                />
-              </FadeUp>
-              <FadeUp delay={0.1}>
-                <WorkCard
-                  title="TexanCleaner"
-                  description="Local cleaning service. SEO-driven growth in a competitive local market with measurable ROI."
-                  tag="SEO + Web"
-                />
-              </FadeUp>
-              <FadeUp delay={0.2}>
-                <WorkCard
-                  title="Premier Futbol Academy"
-                  description="Full identity, web presence, and digital infrastructure built from the ground up."
-                  tag="Branding + Web"
-                />
-              </FadeUp>
-            </div>
-          </div>
-        </div>
-
-        {/* Services as 2-col bullet list */}
-        <div style={{ padding: '60px 0', borderTop: '1px solid #e5e5e5' }}>
-          <div className="container">
-            <FadeUp>
-              <p
-                style={{
-                  fontFamily: 'var(--font-geist, sans-serif)',
-                  fontSize: '11px',
-                  fontWeight: 500,
-                  color: '#888888',
-                  textTransform: 'uppercase',
-                  letterSpacing: '0.14em',
-                  marginBottom: '32px',
-                }}
-              >
-                Services
-              </p>
-            </FadeUp>
-            <FadeUp delay={0.1}>
-              <div className="option-b-services-grid">
-                {[
-                  'Branding & Identity',
-                  'CPG Marketing',
-                  'Web Design & Development',
-                  'Search Engine Optimization',
-                  'Social Media Marketing',
-                  'AI-Powered Strategy',
-                  'Paid Advertising',
-                  'Content Production',
-                ].map((svc) => (
-                  <div key={svc} className="option-b-service-item">
-                    <span style={{ color: '#00f763', marginRight: '10px' }}>&#8250;</span>
-                    <span
-                      style={{
-                        fontFamily: 'var(--font-geist, sans-serif)',
-                        fontSize: '16px',
-                        color: '#0a0a0a',
-                        fontWeight: 400,
-                      }}
-                    >
-                      {svc}
-                    </span>
-                  </div>
-                ))}
-              </div>
-            </FadeUp>
-          </div>
-        </div>
-
-        {/* Stat row */}
-        <div style={{ padding: '48px 0', background: '#0a0a0a' }}>
-          <div className="container">
-            <FadeUp>
-              <p className="option-b-stat-row">
-                15+ Clients &nbsp;&middot;&nbsp; 149 Articles Published &nbsp;&middot;&nbsp; 9 Team Members &nbsp;&middot;&nbsp; 5 Years in SA
-              </p>
-            </FadeUp>
-          </div>
-        </div>
-
-        <SeoSection />
-        <CtaSection />
-      </section>
-
-      {/* ────── OPTION C ────── */}
-      <DesignLabel label="— Design Option C —" />
-
-      <section data-design="c" style={{ background: '#ffffff' }}>
-        {/* Alternating split rows */}
-        {[
-          {
-            num: '01',
-            service: 'Branding & Identity',
-            blurb: 'From logo systems to brand voice, we build identities that own a shelf, a screen, and a room. Built to last, built to scale.',
-            flip: false,
-          },
-          {
-            num: '02',
-            service: 'CPG Marketing',
-            blurb: 'We understand the shelf. Package design, retailer strategy, digital presence - we connect your product to the consumer at every touchpoint.',
-            flip: true,
-          },
-          {
-            num: '03',
-            service: 'Web Design',
-            blurb: 'Sites that convert. Built fast, built clean, built to rank. No templates. Every Beast site is engineered around your specific growth goals.',
-            flip: false,
-          },
-          {
-            num: '04',
-            service: 'SEO & Content',
-            blurb: 'We create content that earns authority - the kind that shows up when your customers search, and the kind that AI platforms cite.',
-            flip: true,
-          },
-        ].map((row, i) => (
-          <div
-            key={row.num}
-            className={`option-c-row ${row.flip ? 'option-c-row-flip' : ''}`}
-            style={{ borderTop: i === 0 ? '1px solid #e5e5e5' : 'none' }}
-          >
-            {/* Text side */}
-            <div className="option-c-text">
-              <FadeUp>
-                <span
-                  style={{
-                    fontFamily: 'var(--font-geist, sans-serif)',
-                    fontSize: '11px',
-                    color: '#888888',
-                    textTransform: 'uppercase',
-                    letterSpacing: '0.14em',
-                    display: 'block',
-                    marginBottom: '16px',
-                  }}
-                >
-                  {row.num}
-                </span>
-                <h3
-                  style={{
-                    fontFamily: 'var(--font-geist, sans-serif)',
-                    fontSize: 'clamp(28px, 3.5vw, 48px)',
-                    fontWeight: 700,
-                    color: '#0a0a0a',
-                    letterSpacing: '-0.02em',
-                    lineHeight: '1.1',
-                    marginBottom: '24px',
-                    textTransform: 'none',
-                  }}
-                >
-                  {row.service}
-                </h3>
-                <p
-                  style={{
-                    fontFamily: 'var(--font-geist, sans-serif)',
-                    fontSize: '16px',
-                    color: '#555555',
-                    lineHeight: '1.8',
-                    maxWidth: '420px',
-                  }}
-                >
-                  {row.blurb}
-                </p>
-              </FadeUp>
-            </div>
-            {/* Dark block side */}
-            <div className="option-c-block" aria-hidden="true" />
-          </div>
-        ))}
-
-        {/* CTA below split rows */}
-        <div style={{ padding: '80px 0', textAlign: 'center', background: '#ffffff', borderTop: '1px solid #e5e5e5' }}>
-          <div className="container">
-            <FadeUp>
-              <Link href="/contact" className="text-cta">
-                Start a Project &#8594;
-              </Link>
-            </FadeUp>
-          </div>
-        </div>
-
-        <SeoSection />
-        <CtaSection />
-      </section>
-
       {/* ══════════════════════════════════════════════
           STYLES
       ══════════════════════════════════════════════ */}
@@ -602,7 +389,6 @@ export default function HomePage() {
           border-top: 1px solid #1e1e1e;
           border-bottom: 1px solid #1e1e1e;
         }
-        .logo-scroll-label {
           font-family: var(--font-geist, sans-serif);
           font-size: 11px;
           font-weight: 400;
