@@ -28,10 +28,10 @@ export default function NavBar() {
         left: 0,
         right: 0,
         zIndex: 100,
-        background: scrolled ? 'rgba(10,10,10,0.9)' : 'transparent',
+        background: scrolled ? 'rgba(255,255,255,0.9)' : 'transparent',
         backdropFilter: scrolled ? 'blur(12px)' : 'none',
         WebkitBackdropFilter: scrolled ? 'blur(12px)' : 'none',
-        borderBottom: scrolled ? '1px solid #1e1e1e' : '1px solid transparent',
+        borderBottom: scrolled ? '1px solid #e5e5e5' : '1px solid transparent',
         transition: 'background 0.3s ease, border-color 0.3s ease, backdrop-filter 0.3s ease',
       }}
     >
@@ -47,7 +47,7 @@ export default function NavBar() {
               fontWeight: 700,
               fontSize: '22px',
               letterSpacing: '-0.02em',
-              color: '#ffffff',
+              color: '#0a0a0a',
             }}
           >
             Beast
@@ -63,7 +63,7 @@ export default function NavBar() {
               href={link.href}
               className="nav-link"
               style={{
-                color: '#ffffff',
+                color: '#0a0a0a',
                 fontFamily: 'var(--font-geist, Geist, sans-serif)',
                 fontSize: '14px',
                 fontWeight: 500,
@@ -81,7 +81,7 @@ export default function NavBar() {
         <button
           className="navbar-mobile-btn"
           onClick={() => setMobileOpen(!mobileOpen)}
-          style={{ display: 'none', background: 'none', border: 'none', cursor: 'pointer', color: '#fff', padding: '4px' }}
+          style={{ display: 'none', background: 'none', border: 'none', cursor: 'pointer', color: '#0a0a0a', padding: '4px' }}
           aria-label="Toggle menu"
         >
           <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
@@ -94,7 +94,7 @@ export default function NavBar() {
 
       {/* Mobile Nav */}
       {mobileOpen && (
-        <div style={{ background: 'rgba(10,10,10,0.98)', borderTop: '1px solid #1e1e1e', padding: '20px' }}>
+        <div style={{ background: 'rgba(255,255,255,0.98)', borderTop: '1px solid #e5e5e5', padding: '20px' }}>
           {navLinks.map((link) => (
             <Link
               key={link.href}
@@ -103,12 +103,12 @@ export default function NavBar() {
               style={{
                 display: 'block',
                 padding: '14px 0',
-                color: '#fff',
+                color: '#0a0a0a',
                 fontFamily: 'var(--font-geist, Geist, sans-serif)',
                 fontSize: '16px',
                 fontWeight: 500,
                 textDecoration: 'none',
-                borderBottom: '1px solid #1e1e1e',
+                borderBottom: '1px solid #e5e5e5',
               }}
             >
               {link.label}
@@ -132,7 +132,7 @@ export default function NavBar() {
           width: 100%;
         }
         .nav-link:hover {
-          color: #fff !important;
+          color: #0a0a0a !important;
         }
         @media (max-width: 768px) {
           .navbar-desktop { display: none !important; }

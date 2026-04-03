@@ -27,8 +27,8 @@ export default function ServicesRow() {
             alignItems: 'center',
             gap: '24px',
             padding: '20px 32px',
-            borderBottom: '1px solid #1e1e1e',
-            background: hoveredIndex === i ? '#ff1198' : 'transparent',
+            borderBottom: '1px solid #e5e5e5',
+            background: hoveredIndex === i ? '#0a0a0a' : 'transparent',
             transition: 'background 0.2s ease',
             cursor: 'default',
           }}
@@ -38,7 +38,7 @@ export default function ServicesRow() {
               fontFamily: 'var(--font-geist, Geist, sans-serif)',
               fontSize: '13px',
               fontWeight: 400,
-              color: hoveredIndex === i ? 'rgba(0,0,0,0.5)' : '#4d4d4d',
+              color: hoveredIndex === i ? 'rgba(255,255,255,0.5)' : '#888888',
               minWidth: '28px',
               transition: 'color 0.2s ease',
             }}
@@ -50,7 +50,7 @@ export default function ServicesRow() {
               fontFamily: 'var(--font-geist, Geist, sans-serif)',
               fontSize: 'clamp(28px, 3.5vw, 40px)',
               fontWeight: 500,
-              color: hoveredIndex === i ? '#000000' : '#ffffff',
+              color: hoveredIndex === i ? '#ffffff' : '#0a0a0a',
               letterSpacing: '-0.01em',
               transition: 'color 0.2s ease',
               lineHeight: 1.1,

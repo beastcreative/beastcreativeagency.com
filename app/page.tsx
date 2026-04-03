@@ -35,7 +35,7 @@ function WorkCard({
             fontFamily: 'var(--font-geist, sans-serif)',
             fontSize: '22px',
             fontWeight: 600,
-            color: '#ffffff',
+            color: '#0a0a0a',
             marginBottom: '12px',
             letterSpacing: '-0.01em',
             lineHeight: '1.3',
@@ -48,7 +48,7 @@ function WorkCard({
           style={{
             fontFamily: 'var(--font-geist, sans-serif)',
             fontSize: '15px',
-            color: '#757575',
+            color: '#555555',
             lineHeight: '1.7',
           }}
         >
@@ -90,7 +90,7 @@ function StatBlock({
         style={{
           fontFamily: 'var(--font-geist, sans-serif)',
           fontSize: '14px',
-          color: '#757575',
+          color: '#555555',
           textTransform: 'uppercase',
           letterSpacing: '0.08em',
         }}
@@ -102,7 +102,7 @@ function StatBlock({
           style={{
             fontFamily: 'var(--font-geist, sans-serif)',
             fontSize: '12px',
-            color: '#4d4d4d',
+            color: '#888888',
             marginTop: '4px',
             fontStyle: 'italic',
           }}
@@ -123,7 +123,7 @@ export default function HomePage() {
       {/* ── 1. HERO ── */}
       <section
         style={{
-          background: '#0a0a0a',
+          background: '#ffffff',
           minHeight: '100vh',
           display: 'flex',
           alignItems: 'center',
@@ -176,7 +176,7 @@ export default function HomePage() {
                 fontFamily: 'var(--font-geist, sans-serif)',
                 fontSize: 'clamp(60px, 8vw, 100px)',
                 fontWeight: 700,
-                color: '#ffffff',
+                color: '#0a0a0a',
                 lineHeight: '1.0',
                 letterSpacing: '-0.03em',
                 maxWidth: '900px',
@@ -193,7 +193,7 @@ export default function HomePage() {
               style={{
                 fontFamily: 'var(--font-geist, sans-serif)',
                 fontSize: '18px',
-                color: '#757575',
+                color: '#555555',
                 lineHeight: '1.7',
                 maxWidth: '600px',
                 marginBottom: '48px',
@@ -259,7 +259,7 @@ export default function HomePage() {
       </div>
 
       {/* ── 3. SERVICES ── */}
-      <section style={{ background: '#0a0a0a', padding: '100px 0' }}>
+      <section style={{ background: '#ffffff', padding: '100px 0' }}>
         <div className="container">
           <FadeUp>
             <p
@@ -267,7 +267,7 @@ export default function HomePage() {
                 fontFamily: 'var(--font-geist, sans-serif)',
                 fontSize: '11px',
                 fontWeight: 500,
-                color: '#4d4d4d',
+                color: '#888888',
                 textTransform: 'uppercase',
                 letterSpacing: '0.14em',
                 marginBottom: '48px',
@@ -281,7 +281,7 @@ export default function HomePage() {
       </section>
 
       {/* ── 4. SELECTED WORK ── */}
-      <section id="work" style={{ background: '#0a0a0a', padding: '100px 0' }}>
+      <section id="work" style={{ background: '#ffffff', padding: '100px 0' }}>
         <div className="container">
           <FadeUp>
             <p
@@ -289,7 +289,7 @@ export default function HomePage() {
                 fontFamily: 'var(--font-geist, sans-serif)',
                 fontSize: '11px',
                 fontWeight: 500,
-                color: '#4d4d4d',
+                color: '#888888',
                 textTransform: 'uppercase',
                 letterSpacing: '0.14em',
                 marginBottom: '48px',
@@ -325,7 +325,7 @@ export default function HomePage() {
       </section>
 
       {/* ── 5. WHY BEAST ── */}
-      <section style={{ background: '#0a0a0a', padding: '100px 0', borderTop: '1px solid #1e1e1e' }}>
+      <section style={{ background: '#ffffff', padding: '100px 0', borderTop: '1px solid #e5e5e5' }}>
         <div className="container">
           <div className="why-beast-grid">
             {/* Left: Stats */}
@@ -350,7 +350,7 @@ export default function HomePage() {
                     fontFamily: 'var(--font-geist, sans-serif)',
                     fontSize: '11px',
                     fontWeight: 500,
-                    color: '#4d4d4d',
+                    color: '#888888',
                     textTransform: 'uppercase',
                     letterSpacing: '0.14em',
                     marginBottom: '32px',
@@ -362,7 +362,7 @@ export default function HomePage() {
                   style={{
                     fontFamily: 'var(--font-geist, sans-serif)',
                     fontSize: '20px',
-                    color: '#ffffff',
+                    color: '#0a0a0a',
                     lineHeight: '1.7',
                     fontWeight: 400,
                     maxWidth: '520px',
@@ -449,20 +449,20 @@ export default function HomePage() {
         .btn-ghost {
           display: inline-block;
           background: transparent;
-          color: #ffffff;
+          color: #0a0a0a;
           padding: 16px 36px;
           font-family: var(--font-geist, sans-serif);
           font-weight: 600;
           font-size: 14px;
           letter-spacing: 0.04em;
           text-decoration: none;
-          border: 1px solid #ffffff;
+          border: 1px solid #0a0a0a;
           border-radius: 2px;
           transition: border-color 0.2s, color 0.2s;
         }
         .btn-ghost:hover {
-          border-color: #757575;
-          color: #757575;
+          border-color: #555555;
+          color: #555555;
         }
         .btn-pink-pill {
           display: inline-block;
@@ -491,8 +491,8 @@ export default function HomePage() {
           position: relative;
         }
         .work-card-inner {
-          background: #121212;
-          border: 1px solid #1e1e1e;
+          background: #f5f5f5;
+          border: 1px solid #e5e5e5;
           padding: 40px;
           height: 100%;
           border-left: 3px solid transparent;
