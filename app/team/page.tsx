@@ -1,15 +1,22 @@
-import Link from 'next/link';
-import { getAllPosts, formatDate } from '@/lib/blog';
+import type { Metadata } from 'next';
 
-export const metadata = {
-  title: 'The Beasty Blog | Beast Creative Agency Digital Marketing',
-  description:
-    'Marketing insights, tips, and strategies from Beast Creative Agency. Take a bite out of our chunks of marketing information.',
+export const metadata: Metadata = {
+  title: 'Our Team | Beast Creative Agency',
+  description: 'Meet the team behind Beast Creative Agency - San Antonio\'s leading digital marketing agency.',
 };
 
-export default function BlogPage() {
-  const posts = getAllPosts();
+const team = [
+  { name: 'Edy Hernandez', role: 'CEO / Founder' },
+  { name: 'John Speer', role: 'COO / Co-Owner' },
+  { name: 'Kyle Ossinger', role: 'Graphic Designer' },
+  { name: 'Eric Patino', role: 'Web Developer' },
+  { name: 'Andy Bernot', role: 'SEO Specialist' },
+  { name: 'Misha', role: 'Project Leader' },
+  { name: 'Sydney', role: 'Graphic Designer' },
+  { name: 'Rubi', role: 'Social Media Manager' },
+];
 
+export default function TeamPage() {
   return (
     <>
       {/* Hero */}
@@ -34,7 +41,7 @@ export default function BlogPage() {
                 marginBottom: '16px',
               }}
             >
-              Our Blog
+              Who We Are
             </span>
             <h1
               style={{
@@ -47,7 +54,7 @@ export default function BlogPage() {
                 marginBottom: '16px',
               }}
             >
-              The Beasty Blog
+              Our Team
             </h1>
             <p
               style={{
@@ -57,57 +64,58 @@ export default function BlogPage() {
                 lineHeight: '1.7',
               }}
             >
-              Take a bite out of our chunks of marketing information.
+              The people behind Beast Creative Agency - San Antonio's leading digital marketing team.
             </p>
           </div>
         </div>
       </section>
 
-      {/* Blog Posts */}
+      {/* Team Grid */}
       <section style={{ background: '#0c0c0c', padding: '80px 0' }}>
         <div className="container">
           <div
             style={{
               display: 'grid',
-              gridTemplateColumns: 'repeat(3, 1fr)',
+              gridTemplateColumns: 'repeat(auto-fit, minmax(220px, 1fr))',
               gap: '24px',
+              maxWidth: '960px',
+              margin: '0 auto',
             }}
           >
-            {posts.map((post) => (
-              <article
-                key={post.slug}
+            {team.map((member) => (
+              <div
+                key={member.name}
                 style={{
                   background: '#111',
                   border: '1px solid #222',
-                  padding: '32px',
-                  display: 'flex',
-                  flexDirection: 'column',
-                  gap: '16px',
+                  padding: '40px 24px',
+                  textAlign: 'center',
                 }}
               >
-                <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: '8px' }}>
+                {/* Avatar placeholder */}
+                <div
+                  style={{
+                    width: '80px',
+                    height: '80px',
+                    borderRadius: '50%',
+                    background: '#1a1a1a',
+                    border: '2px solid #ff1198',
+                    margin: '0 auto 20px',
+                    display: 'flex',
+                    alignItems: 'center',
+                    justifyContent: 'center',
+                  }}
+                >
                   <span
                     style={{
-                      background: '#ff1198',
-                      color: '#fff',
+                      color: '#ff1198',
                       fontFamily: 'Raleway, sans-serif',
                       fontWeight: 700,
-                      fontSize: '11px',
+                      fontSize: '24px',
                       textTransform: 'uppercase',
-                      letterSpacing: '0.08em',
-                      padding: '4px 10px',
                     }}
                   >
-                    {post.category}
-                  </span>
-                  <span
-                    style={{
-                      color: '#666',
-                      fontFamily: 'Raleway, sans-serif',
-                      fontSize: '12px',
-                    }}
-                  >
-                    {formatDate(post.date)}
+                    {member.name.charAt(0)}
                   </span>
                 </div>
                 <h2
@@ -115,53 +123,26 @@ export default function BlogPage() {
                     color: '#fff',
                     fontFamily: 'Raleway, sans-serif',
                     fontWeight: 700,
-                    fontSize: '18px',
+                    fontSize: '16px',
                     textTransform: 'uppercase',
-                    lineHeight: '1.3',
-                    flex: 1,
+                    marginBottom: '8px',
                   }}
                 >
-                  {post.title}
+                  {member.name}
                 </h2>
                 <p
                   style={{
-                    color: '#aaa',
-                    fontFamily: 'Raleway, sans-serif',
-                    fontSize: '14px',
-                    lineHeight: '1.7',
-                  }}
-                >
-                  {post.excerpt.length > 160 ? post.excerpt.slice(0, 160) + '...' : post.excerpt}
-                </p>
-                <Link
-                  href={`/blog/${post.slug}`}
-                  style={{
                     color: '#ff1198',
                     fontFamily: 'Raleway, sans-serif',
-                    fontWeight: 600,
                     fontSize: '13px',
+                    fontWeight: 600,
                     textTransform: 'uppercase',
                     letterSpacing: '0.05em',
-                    display: 'inline-flex',
-                    alignItems: 'center',
-                    gap: '6px',
-                    marginTop: 'auto',
-                    textDecoration: 'none',
                   }}
                 >
-                  Read More
-                  <svg
-                    width="14"
-                    height="14"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    strokeWidth="2"
-                  >
-                    <path d="M5 12h14M12 5l7 7-7 7" />
-                  </svg>
-                </Link>
-              </article>
+                  {member.role}
+                </p>
+              </div>
             ))}
           </div>
         </div>
@@ -180,7 +161,7 @@ export default function BlogPage() {
               marginBottom: '20px',
             }}
           >
-            Want Marketing Help, Not Just Tips?
+            Work With the Herd
           </h2>
           <p
             style={{
@@ -190,7 +171,7 @@ export default function BlogPage() {
               marginBottom: '32px',
             }}
           >
-            Let Beast Creative Agency handle your marketing while you focus on running your business.
+            Ready to grow your business with a team that treats your success like their own?
           </p>
           <a
             href="/contact"
@@ -207,7 +188,7 @@ export default function BlogPage() {
               textDecoration: 'none',
             }}
           >
-            Get a Free Assessment
+            Get Started
           </a>
         </div>
       </section>
