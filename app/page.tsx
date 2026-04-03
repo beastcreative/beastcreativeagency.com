@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import FadeUp from '@/components/FadeUp';
 import ServicesRow from '@/components/ServicesRow';
+import CaseStudyCard from '@/components/CaseStudyCard';
 
 export const metadata = {
   title: "Marketing Agency in San Antonio, TX | Beast Creative Agency",
@@ -353,6 +354,114 @@ export default function HomePage() {
             </FadeUp>
           </div>
         </div>
+
+        {/* ── CASE STUDIES ── */}
+        <section style={{ background: 'var(--bg)', padding: '80px 0', borderTop: '1px solid var(--border)' }}>
+          <div className="container">
+            <FadeUp>
+              <p style={{ fontSize: '11px', fontWeight: 500, color: 'var(--text-muted)', textTransform: 'uppercase', letterSpacing: '0.14em', marginBottom: '12px', fontFamily: 'var(--font-geist, sans-serif)' }}>Selected Work</p>
+              <h2 style={{ fontSize: 'clamp(28px, 4vw, 48px)', fontWeight: 700, color: 'var(--text)', fontFamily: 'var(--font-geist, sans-serif)', letterSpacing: '-0.02em', marginBottom: '48px', lineHeight: 1.1 }}>
+                Results we&apos;re proud of
+              </h2>
+            </FadeUp>
+            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '24px' }}>
+              {[
+                { client: 'CHG — Consumer Health Group', tag: 'CPG Marketing', result: '15+ national food brands. 900+ recipes. One consolidated digital presence across Williams Foods, Pioneer Brand, Sun-Bird Seasonings, and Tribeca Oven.', href: '/branding-case-study' },
+                { client: 'TexanCleaner', tag: 'SEO + Web Design', result: 'Local cleaning service competing in a saturated market. SEO-driven growth with measurable increase in qualified inbound leads.', href: '/dermatology-marketing-case-study' },
+                { client: 'Premier Futbol Academy', tag: 'Branding + Web', result: "Full brand identity, Next.js website, fan store, and digital infrastructure for San Antonio's premier youth soccer academy.", href: '/branding-case-study' },
+              ].map((cs) => (
+                <FadeUp key={cs.client}>
+                  <CaseStudyCard client={cs.client} tag={cs.tag} result={cs.result} href={cs.href} />
+                </FadeUp>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* ── PROCESS ── */}
+        <section style={{ background: 'var(--dark-bg)', padding: '80px 0' }}>
+          <div className="container">
+            <FadeUp>
+              <p style={{ fontSize: '11px', fontWeight: 500, color: 'var(--text-muted)', textTransform: 'uppercase', letterSpacing: '0.14em', marginBottom: '12px', fontFamily: 'var(--font-geist, sans-serif)' }}>How We Work</p>
+              <h2 style={{ fontSize: 'clamp(28px, 4vw, 48px)', fontWeight: 700, color: 'var(--dark-text)', fontFamily: 'var(--font-geist, sans-serif)', letterSpacing: '-0.02em', marginBottom: '48px', lineHeight: 1.1 }}>
+                Strategy first. Always.
+              </h2>
+            </FadeUp>
+            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(220px, 1fr))', gap: '40px' }}>
+              {[
+                { num: '01', title: 'Discovery', body: 'We learn your business, market, and goals before touching a single asset. No assumptions.' },
+                { num: '02', title: 'Strategy', body: 'Data-driven plan built around your specific keywords, competitors, and growth levers.' },
+                { num: '03', title: 'Execution', body: 'Our team of specialists and AI agents moves fast without cutting corners.' },
+                { num: '04', title: 'Measure', body: 'Every campaign is tracked. We report on what matters - leads, revenue, rankings.' },
+              ].map((step) => (
+                <FadeUp key={step.num} delay={0.1}>
+                  <div>
+                    <p style={{ fontSize: '12px', fontWeight: 700, color: 'var(--green)', fontFamily: 'var(--font-geist, sans-serif)', letterSpacing: '0.1em', marginBottom: '16px' }}>{step.num}</p>
+                    <h3 style={{ fontSize: '20px', fontWeight: 700, color: 'var(--dark-text)', fontFamily: 'var(--font-geist, sans-serif)', marginBottom: '12px' }}>{step.title}</h3>
+                    <p style={{ fontSize: '15px', color: '#888', lineHeight: '1.7', fontFamily: 'var(--font-geist, sans-serif)' }}>{step.body}</p>
+                  </div>
+                </FadeUp>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* ── STATS ── */}
+        <section style={{ background: 'var(--bg)', padding: '60px 0', borderTop: '1px solid var(--border)', borderBottom: '1px solid var(--border)' }}>
+          <div className="container">
+            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(150px, 1fr))', gap: '40px', textAlign: 'center' }}>
+              {[
+                { num: '15+', label: 'Active Clients' },
+                { num: '9+', label: 'Team Members' },
+                { num: '149', label: 'Articles Published' },
+                { num: '5', label: 'Years in San Antonio' },
+              ].map((stat) => (
+                <FadeUp key={stat.label}>
+                  <div>
+                    <p style={{ fontSize: 'clamp(36px, 5vw, 56px)', fontWeight: 800, color: 'var(--green)', fontFamily: 'var(--font-geist, sans-serif)', lineHeight: 1, marginBottom: '8px', letterSpacing: '-0.02em' }}>{stat.num}</p>
+                    <p style={{ fontSize: '13px', color: 'var(--text-muted)', textTransform: 'uppercase', letterSpacing: '0.1em', fontFamily: 'var(--font-geist, sans-serif)' }}>{stat.label}</p>
+                  </div>
+                </FadeUp>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* ── FAQ ── */}
+        <section style={{ background: 'var(--bg)', padding: '80px 0', borderTop: '1px solid var(--border)' }}>
+          <div className="container" style={{ maxWidth: '760px' }}>
+            <FadeUp>
+              <h2 style={{ fontSize: 'clamp(24px, 3vw, 36px)', fontWeight: 700, color: 'var(--text)', fontFamily: 'var(--font-geist, sans-serif)', letterSpacing: '-0.02em', marginBottom: '48px' }}>
+                Frequently Asked Questions
+              </h2>
+            </FadeUp>
+            {[
+              { q: 'What does a marketing agency in San Antonio do?', a: 'A marketing agency in San Antonio handles strategy, branding, web design, SEO, social media, and paid advertising for local and national brands. Beast Creative Agency goes further by integrating AI into every layer of our operations, giving clients faster delivery and sharper strategy than traditional agencies.' },
+              { q: 'How much does a marketing agency cost in San Antonio?', a: 'Marketing agency costs in San Antonio range from $1,500/month for basic services to $15,000+/month for full-service retainers. Beast works with brands across this range depending on scope - we start with a strategy session to identify the highest-impact work for your budget.' },
+              { q: 'What is a CPG marketing agency?', a: 'A CPG (consumer packaged goods) marketing agency specializes in marketing food, beverage, household, and personal care products. Beast Creative Agency works with CPG brands on retail strategy, packaging, digital marketing, and brand-building that drives both shelf placement and direct-to-consumer sales.' },
+              { q: 'Do you work with local San Antonio businesses?', a: 'Yes. Beast Creative Agency is based in San Antonio and works with local businesses across retail, food and beverage, professional services, real estate, and more. We also work with national brands that need a team with strong regional roots and national reach.' },
+              { q: 'What makes Beast different from other San Antonio agencies?', a: 'Beast is the only marketing agency in San Antonio running AI at the operations layer. Our team of human specialists works alongside AI agents to deliver faster research, sharper content, and more consistent execution than a traditional agency of our size could manage.' },
+            ].map((faq, i) => (
+              <FadeUp key={i} delay={0.05 * i}>
+                <div style={{ borderTop: '1px solid var(--border)', padding: '24px 0' }}>
+                  <h3 style={{ fontSize: '17px', fontWeight: 600, color: 'var(--text)', fontFamily: 'var(--font-geist, sans-serif)', marginBottom: '12px', lineHeight: 1.4 }}>{faq.q}</h3>
+                  <p style={{ fontSize: '15px', color: 'var(--text-secondary)', lineHeight: '1.7', fontFamily: 'var(--font-geist, sans-serif)' }}>{faq.a}</p>
+                </div>
+              </FadeUp>
+            ))}
+          </div>
+        </section>
+
+        {/* FAQ Schema */}
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          "mainEntity": [
+            { "@type": "Question", "name": "What does a marketing agency in San Antonio do?", "acceptedAnswer": { "@type": "Answer", "text": "A marketing agency in San Antonio handles strategy, branding, web design, SEO, social media, and paid advertising for local and national brands." } },
+            { "@type": "Question", "name": "What is a CPG marketing agency?", "acceptedAnswer": { "@type": "Answer", "text": "A CPG marketing agency specializes in marketing food, beverage, household, and personal care products including retail strategy, packaging, and digital marketing." } },
+            { "@type": "Question", "name": "What makes Beast different from other San Antonio agencies?", "acceptedAnswer": { "@type": "Answer", "text": "Beast is the only marketing agency in San Antonio running AI at the operations layer, combining human specialists with AI agents for faster delivery and sharper strategy." } }
+          ]
+        }) }} />
 
         <SeoSection />
         <CtaSection />
