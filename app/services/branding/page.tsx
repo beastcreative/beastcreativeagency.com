@@ -1,7 +1,7 @@
 import CTAButton from '@/components/CTAButton';
 
 export const metadata = {
-  title: 'Branding Services San Antonio | Beast Creative Agency',
+  title: 'Branding Agency San Antonio | Brand Identity & Strategy | Beast',
   description: 'Professional branding services in San Antonio TX. Brand identity, strategy, and design that commands attention. Beast Creative Agency.',
 };
 

@@ -3,6 +3,9 @@ import CTAButton from '@/components/CTAButton';
 export const metadata = {
   title: 'Social Media Marketing Marketing San Antonio | Beast Creative Agency',
   description: 'Beast Creative Agency The Social Media Marketing Agency in San Antonio You Were Expecting Why Choose Us As Your San Antonio Social Media Marketing? Proven ',
+  alternates: {
+    canonical: 'https://www.beastcreativeagency.com/social-media-marketing-san-antonio/',
+  },
 };
 
 export default function Page() {

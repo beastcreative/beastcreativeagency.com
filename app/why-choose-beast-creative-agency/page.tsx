@@ -3,6 +3,9 @@ import CTAButton from '@/components/CTAButton';
 export const metadata = {
   title: 'Why Choose Beast Creative Agency? | Beast Creative Agency',
   description: 'Beast Creative Agency Why Beast? Simply put, we are expert Ideators: We Dream Up Your Next Big… Call Now Why choose the Best Digital Marketers in San Anton',
+  alternates: {
+    canonical: 'https://www.beastcreativeagency.com/why-choose-beast-creative-agency/',
+  },
 };
 
 export default function Page() {

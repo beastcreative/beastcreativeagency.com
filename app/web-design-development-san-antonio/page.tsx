@@ -3,6 +3,9 @@ import CTAButton from '@/components/CTAButton';
 export const metadata = {
   title: 'Web Design and Development San Antonio | Beast Creative Agency',
   description: 'Beast Creative Agency The Best Web Design Agency in San Antonio A powerful online presence begins with high-quality web design in San Antonio. At Beast Cre',
+  alternates: {
+    canonical: 'https://www.beastcreativeagency.com/web-design-development-san-antonio/',
+  },
 };
 
 export default function Page() {

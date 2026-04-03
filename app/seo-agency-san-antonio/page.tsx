@@ -2,7 +2,10 @@ import CTAButton from '@/components/CTAButton';
 
 export const metadata = {
   title: 'SEO Agency San Antonio | Beast Creative Agency',
-  description: 'Beast Creative Agency The #1 SEO Agency in San Antonio In today’s digital-first world, businesses in San Antonio must leverage effective SEO strategies to ',
+  description: 'Beast Creative Agency The #1 SEO Agency in San Antonio In today\'s digital-first world, businesses in San Antonio must leverage effective SEO strategies to ',
+  alternates: {
+    canonical: 'https://www.beastcreativeagency.com/seo-agency-san-antonio/',
+  },
 };
 
 export default function Page() {
@@ -16,7 +19,7 @@ export default function Page() {
               SEO Agency San Antonio
             </h1>
             <p style={{ color: 'var(--text-secondary)', fontFamily: 'Raleway, sans-serif', fontSize: '18px', lineHeight: '1.7', marginBottom: '40px' }}>
-              Beast Creative Agency The #1 SEO Agency in San Antonio In today’s digital-first world, businesses in San Antonio must leverage effective SEO strategies to improve visibility, attract more customers, and stay ahead of the competition. At Beast Creativ
+              Beast Creative Agency The #1 SEO Agency in San Antonio In today's digital-first world, businesses in San Antonio must leverage effective SEO strategies to improve visibility, attract more customers, and stay ahead of the competition. At Beast Creativ
             </p>
             <CTAButton href="/contact" text="Get Started" />
           </div>
@@ -24,13 +27,13 @@ export default function Page() {
       </section>
       <section style={{ background: 'var(--bg-surface)', padding: '80px 0' }}>
         <div className="container">
-          
+
       <div style={{ marginBottom: '60px' }}>
         <h2 style={{ color: 'var(--text)', fontFamily: 'Raleway, sans-serif', fontWeight: 700, fontSize: 'clamp(24px, 3vw, 36px)', textTransform: 'uppercase', marginBottom: '20px' }}>
           Why Choose Our San Antonio SEO Services?
         </h2>
         <p style={{ color: 'var(--text-secondary)', fontFamily: 'Raleway, sans-serif', fontSize: '17px', lineHeight: '1.8', maxWidth: '760px' }}>
-          
+
         </p>
       </div>
       <div style={{ marginBottom: '60px' }}>
@@ -46,7 +49,7 @@ export default function Page() {
           Key Benefits of SEO San Antonio Services
         </h2>
         <p style={{ color: 'var(--text-secondary)', fontFamily: 'Raleway, sans-serif', fontSize: '17px', lineHeight: '1.8', maxWidth: '760px' }}>
-          
+
         </p>
       </div>
           <div style={{ background: 'var(--bg-elevated)', border: '1px solid var(--border)', borderRadius: '8px', padding: '48px', textAlign: 'center', marginTop: '60px' }}>

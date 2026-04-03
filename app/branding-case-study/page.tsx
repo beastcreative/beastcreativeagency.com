@@ -3,6 +3,9 @@ import CTAButton from '@/components/CTAButton';
 export const metadata = {
   title: 'Branding Case Study | Beast Creative Agency',
   description: 'San Antonio Branding Experts Do you love social arcade games? Meet Blue Mountain Games, a game development studio composed of passionate gamers who want to',
+  alternates: {
+    canonical: 'https://www.beastcreativeagency.com/branding-case-study/',
+  },
 };
 
 export default function Page() {

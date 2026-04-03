@@ -3,6 +3,9 @@ import CTAButton from '@/components/CTAButton';
 export const metadata = {
   title: 'Branding Agency San Antonio | Beast Creative Agency',
   description: 'Beast Creative Agency The Best Branding Agency in San Antonio Why Choose Our Branding in San Antonio? Quality Expertise Reliability Professionalism Call No',
+  alternates: {
+    canonical: 'https://www.beastcreativeagency.com/branding-agency-san-antonio/',
+  },
 };
 
 export default function Page() {

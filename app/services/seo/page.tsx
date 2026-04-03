@@ -1,7 +1,7 @@
 import CTAButton from '@/components/CTAButton';
 
 export const metadata = {
-  title: 'SEO Services San Antonio | Beast Creative Agency',
+  title: 'SEO Agency San Antonio | Search Engine Optimization | Beast',
   description: 'Data-driven SEO services in San Antonio TX. Dominate Google rankings and drive qualified organic traffic. Beast Creative Agency.',
 };
 

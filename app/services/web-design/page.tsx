@@ -1,7 +1,7 @@
 import CTAButton from '@/components/CTAButton';
 
 export const metadata = {
-  title: 'Web Design and Development San Antonio | Beast Creative Agency',
+  title: 'Web Design San Antonio | Custom Website Development | Beast',
   description: 'Custom web design and development in San Antonio TX. Fast, mobile-first websites that convert visitors into customers. Beast Creative Agency.',
 };
 

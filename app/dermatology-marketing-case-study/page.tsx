@@ -2,7 +2,10 @@ import CTAButton from '@/components/CTAButton';
 
 export const metadata = {
   title: 'Dermatology Marketing Case Study | Beast Creative Agency',
-  description: 'Dermatology – Digital Marketing Services Make your phone and not your head ring with Beast Creative. We believe that digital marketing doesn’t have to be a',
+  description: 'Dermatology - Digital Marketing Services Make your phone and not your head ring with Beast Creative. We believe that digital marketing doesn\'t have to be a',
+  alternates: {
+    canonical: 'https://www.beastcreativeagency.com/dermatology-marketing-case-study/',
+  },
 };
 
 export default function Page() {
@@ -16,7 +19,7 @@ export default function Page() {
               Dermatology Marketing Case Study
             </h1>
             <p style={{ color: 'var(--text-secondary)', fontFamily: 'Raleway, sans-serif', fontSize: '18px', lineHeight: '1.7', marginBottom: '40px' }}>
-              Dermatology – Digital Marketing Services Make your phone and not your head ring with Beast Creative. We believe that digital marketing doesn’t have to be a source of confusion or frustration. Read how RFSA hopped in with our herd and Beasted her way 
+              Dermatology - Digital Marketing Services Make your phone and not your head ring with Beast Creative. We believe that digital marketing doesn't have to be a source of confusion or frustration. Read how RFSA hopped in with our herd and Beasted her way
             </p>
             <CTAButton href="/contact" text="Get Started" />
           </div>
@@ -24,7 +27,7 @@ export default function Page() {
       </section>
       <section style={{ background: 'var(--bg-surface)', padding: '80px 0' }}>
         <div className="container">
-          
+
       <div style={{ marginBottom: '60px' }}>
         <h2 style={{ color: 'var(--text)', fontFamily: 'Raleway, sans-serif', fontWeight: 700, fontSize: 'clamp(24px, 3vw, 36px)', textTransform: 'uppercase', marginBottom: '20px' }}>
           ClientStory:

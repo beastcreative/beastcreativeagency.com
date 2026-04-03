@@ -5,11 +5,14 @@ export const metadata: Metadata = {
   title: 'CPG Marketing Agency | Beast Creative Agency San Antonio',
   description:
     'Beast Creative Agency is a leading CPG marketing agency specializing in consumer packaged goods. Data-driven strategies for brand growth, retail distribution, and digital marketing.',
+  alternates: {
+    canonical: 'https://www.beastcreativeagency.com/cpg-marketing-agency/',
+  },
   openGraph: {
     title: 'CPG Marketing Agency | Beast Creative Agency',
     description:
       'Elevate your CPG brand with data-driven marketing strategies from Beast Creative Agency. Branding, performance marketing, social media, and more.',
-    url: 'https://beastcreativeagency.com/cpg-marketing-agency',
+    url: 'https://www.beastcreativeagency.com/cpg-marketing-agency/',
   },
 };
 

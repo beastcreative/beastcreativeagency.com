@@ -1,7 +1,7 @@
 import CTAButton from '@/components/CTAButton';
 
 export const metadata = {
-  title: 'Logo Design San Antonio | Beast Creative Agency',
+  title: 'Logo Design San Antonio | Custom Logo & Brand Mark | Beast',
   description: 'Professional logo design in San Antonio TX. Memorable logos that capture your brand essence. Beast Creative Agency.',
 };
 

@@ -2,6 +2,21 @@ import Link from 'next/link';
 import FadeUp from '@/components/FadeUp';
 import ServicesRow from '@/components/ServicesRow';
 
+export const metadata = {
+  title: "Marketing Agency in San Antonio, TX | Beast Creative Agency",
+  description:
+    "Beast Creative Agency is San Antonio's full-service marketing agency. We specialize in branding, CPG marketing, web design, SEO, and AI-powered strategy. Get results that compound.",
+  alternates: {
+    canonical: "https://www.beastcreativeagency.com/",
+  },
+  openGraph: {
+    title: "Marketing Agency in San Antonio, TX | Beast Creative Agency",
+    description:
+      "Branding, web design, SEO, CPG marketing, and AI strategy. San Antonio's most forward-thinking agency.",
+    url: "https://www.beastcreativeagency.com/",
+  },
+};
+
 /* ─────────────────────────────────────────────────────
    WorkCard
 ───────────────────────────────────────────────────── */
@@ -98,6 +113,14 @@ function SeoSection() {
             }}
           >
             Beast Creative Agency is a full-service marketing agency based in San Antonio, Texas. We specialize in branding, web design, SEO, social media marketing, and CPG brand strategy. Whether you&apos;re a local business looking to grow or a national consumer packaged goods brand that needs a partner who understands the shelf, Beast delivers creative work that drives real results. We serve clients across San Antonio, Austin, Houston, and nationwide.
+          </p>
+          <p style={{ fontSize: '16px', color: 'var(--text-secondary)', lineHeight: '1.7', marginTop: '24px', maxWidth: '720px' }}>
+            Explore our specialized services:{' '}
+            <a href="/cpg-marketing-agency" style={{ color: 'var(--pink)', textDecoration: 'underline' }}>CPG Marketing Agency</a>,{' '}
+            <a href="/branding-agency-san-antonio" style={{ color: 'var(--pink)', textDecoration: 'underline' }}>Branding Agency in San Antonio</a>,{' '}
+            <a href="/seo-agency-san-antonio" style={{ color: 'var(--pink)', textDecoration: 'underline' }}>SEO Agency in San Antonio</a>,{' '}
+            <a href="/web-design-development-san-antonio" style={{ color: 'var(--pink)', textDecoration: 'underline' }}>Web Design in San Antonio</a>, and{' '}
+            <a href="/social-media-marketing-san-antonio" style={{ color: 'var(--pink)', textDecoration: 'underline' }}>Social Media Marketing</a>.
           </p>
         </FadeUp>
       </div>

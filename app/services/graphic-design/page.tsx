@@ -1,7 +1,7 @@
 import CTAButton from '@/components/CTAButton';
 
 export const metadata = {
-  title: 'Graphic Design Services San Antonio | Beast Creative Agency',
+  title: 'Graphic Design San Antonio | Professional Design Services | Beast',
   description: 'Professional graphic design in San Antonio TX. Print, digital, and social media design that elevates your brand. Beast Creative Agency.',
 };
 

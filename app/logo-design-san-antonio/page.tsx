@@ -3,6 +3,9 @@ import CTAButton from '@/components/CTAButton';
 export const metadata = {
   title: 'Logo Design San Antonio | Beast Creative Agency',
   description: 'Beast Creative Agency Get The Best Looking Logo Design in San Antonio Why Choose Us For Your Logo Design in San Antonio? Quality Expertise Reliability Prof',
+  alternates: {
+    canonical: 'https://www.beastcreativeagency.com/logo-design-san-antonio/',
+  },
 };
 
 export default function Page() {
