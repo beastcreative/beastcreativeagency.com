@@ -4,11 +4,12 @@ import Link from 'next/link';
 
 interface CTAButtonProps {
   href: string;
-  children: React.ReactNode;
+  children?: React.ReactNode;
+  text?: string;
   style?: React.CSSProperties;
 }
 
-export default function CTAButton({ href, children, style }: CTAButtonProps) {
+export default function CTAButton({ href, children, text, style }: CTAButtonProps) {
   return (
     <Link href={href}
       style={{
@@ -30,7 +31,7 @@ export default function CTAButton({ href, children, style }: CTAButtonProps) {
       }}
       onMouseEnter={e => (e.currentTarget.style.background = '#d4007d')}
       onMouseLeave={e => (e.currentTarget.style.background = '#ff1198')}>
-      {children}
+      {children ?? text}
     </Link>
   );
 }
