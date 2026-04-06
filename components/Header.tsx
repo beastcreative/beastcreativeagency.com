@@ -12,6 +12,7 @@ const services = [
   { name: 'SEO', href: '/services/seo' },
   { name: 'Social Media Marketing', href: '/services/social-media' },
   { name: 'Web Design and Development', href: '/services/web-design' },
+  { name: 'AI Consultancy', href: '/ai-consultancy-san-antonio' },
 ];
 
 export default function Header() {

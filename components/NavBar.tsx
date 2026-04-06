@@ -14,7 +14,6 @@ export default function NavBar() {
   }, []);
 
   const navLinks = [
-    { label: 'Case Studies', href: '/case-studies' },
     { label: 'Services', href: '/services' },
     { label: 'Blog', href: '/blog' },
     { label: 'About', href: '/about' },
