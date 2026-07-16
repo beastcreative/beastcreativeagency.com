@@ -330,7 +330,7 @@ export default function HomePage() {
                       marginBottom: '32px',
                     }}
                   >
-                    Beast is built on one principle: every dollar a client spends should come back multiplied. We don&apos;t chase trends. We build brand infrastructure that compounds. The kind that earns shelf space, search rankings, and brand loyalty simultaneously.
+                    Beast is built on one principle: every dollar a client spends should come back multiplied. We don&apos;t chase trends. We build brand infrastructure that compounds - the kind that earns shelf space, search rankings, and brand loyalty simultaneously.
                   </p>
                   <p
                     style={{
@@ -340,7 +340,7 @@ export default function HomePage() {
                       lineHeight: '1.8',
                     }}
                   >
-                    Our team of specialists and AI agents works in parallel, moving at a speed traditional agencies can&apos;t match. That&apos;s not a pitch. It&apos;s how we&apos;re wired.
+                    Our team of specialists and AI agents works in parallel, moving at a speed traditional agencies can&apos;t match. That&apos;s not a pitch - it&apos;s how we&apos;re wired.
                   </p>
                 </div>
               </FadeUp>
@@ -366,7 +366,7 @@ export default function HomePage() {
             </FadeUp>
             <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '24px' }}>
               {[
-                { client: 'CHG (Consumer Health Group)', tag: 'CPG Marketing', result: '15+ national food brands. 900+ recipes. One consolidated digital presence across Williams Foods, Pioneer Brand, Sun-Bird Seasonings, and Tribeca Oven.', href: '/branding-case-study' },
+                { client: 'CHG — Consumer Health Group', tag: 'CPG Marketing', result: '15+ national food brands. 900+ recipes. One consolidated digital presence across Williams Foods, Pioneer Brand, Sun-Bird Seasonings, and Tribeca Oven.', href: '/branding-case-study' },
                 { client: 'TexanCleaner', tag: 'SEO + Web Design', result: 'Local cleaning service competing in a saturated market. SEO-driven growth with measurable increase in qualified inbound leads.', href: '/dermatology-marketing-case-study' },
                 { client: 'Premier Futbol Academy', tag: 'Branding + Web', result: "Full brand identity, Next.js website, fan store, and digital infrastructure for San Antonio's premier youth soccer academy.", href: '/branding-case-study' },
               ].map((cs) => (
@@ -392,7 +392,7 @@ export default function HomePage() {
                 { num: '01', title: 'Discovery', body: 'We learn your business, market, and goals before touching a single asset. No assumptions.' },
                 { num: '02', title: 'Strategy', body: 'Data-driven plan built around your specific keywords, competitors, and growth levers.' },
                 { num: '03', title: 'Execution', body: 'Our team of specialists and AI agents moves fast without cutting corners.' },
-                { num: '04', title: 'Measure', body: 'Every campaign is tracked. We report on what matters: leads, revenue, rankings.' },
+                { num: '04', title: 'Measure', body: 'Every campaign is tracked. We report on what matters - leads, revenue, rankings.' },
               ].map((step) => (
                 <FadeUp key={step.num} delay={0.1}>
                   <div>
@@ -437,7 +437,7 @@ export default function HomePage() {
             </FadeUp>
             {[
               { q: 'What does a marketing agency in San Antonio do?', a: 'A marketing agency in San Antonio handles strategy, branding, web design, SEO, social media, and paid advertising for local and national brands. Beast Creative Agency goes further by integrating AI into every layer of our operations, giving clients faster delivery and sharper strategy than traditional agencies.' },
-              { q: 'How much does a marketing agency cost in San Antonio?', a: 'Marketing agency costs in San Antonio range from $1,500/month for basic services to $15,000+/month for full-service retainers. Beast works with brands across this range depending on scope. We start with a strategy session to identify the highest-impact work for your budget.' },
+              { q: 'How much does a marketing agency cost in San Antonio?', a: 'Marketing agency costs in San Antonio range from $1,500/month for basic services to $15,000+/month for full-service retainers. Beast works with brands across this range depending on scope - we start with a strategy session to identify the highest-impact work for your budget.' },
               { q: 'What is a CPG marketing agency?', a: 'A CPG (consumer packaged goods) marketing agency specializes in marketing food, beverage, household, and personal care products. Beast Creative Agency works with CPG brands on retail strategy, packaging, digital marketing, and brand-building that drives both shelf placement and direct-to-consumer sales.' },
               { q: 'Do you work with local San Antonio businesses?', a: 'Yes. Beast Creative Agency is based in San Antonio and works with local businesses across retail, food and beverage, professional services, real estate, and more. We also work with national brands that need a team with strong regional roots and national reach.' },
               { q: 'What makes Beast different from other San Antonio agencies?', a: 'Beast is the only marketing agency in San Antonio running AI at the operations layer. Our team of human specialists works alongside AI agents to deliver faster research, sharper content, and more consistent execution than a traditional agency of our size could manage.' },
