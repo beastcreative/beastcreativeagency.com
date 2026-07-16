@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
   title: 'Our Team | Beast Creative Agency',
-  description: 'Meet the team behind Beast Creative Agency - San Antonio\'s leading digital marketing agency.',
+  description: 'Meet the team behind Beast Creative Agency, San Antonio\'s leading digital marketing agency.',
 };
 
 const team = [
@@ -64,7 +64,7 @@ export default function TeamPage() {
                 lineHeight: '1.7',
               }}
             >
-              The people behind Beast Creative Agency - San Antonio's leading digital marketing team.
+              The people behind Beast Creative Agency, San Antonio's leading digital marketing team.
             </p>
           </div>
         </div>

@@ -33,7 +33,7 @@ export default function WhyBeastPage() {
               {
                 num: '01',
                 title: 'We Are Certified Specialists',
-                content: 'Every member of the Beast Creative team holds certifications from the industry\'s leading platforms - Google, HubSpot, Meta, SEMrush, and more. When you work with us, you are working with professionals who have been tested and verified on the platforms where your money is being spent. We do not learn on your dime.',
+                content: 'Every member of the Beast Creative team holds certifications from the industry\'s leading platforms: Google, HubSpot, Meta, SEMrush, and more. When you work with us, you are working with professionals who have been tested and verified on the platforms where your money is being spent. We do not learn on your dime.',
               },
               {
                 num: '02',
@@ -48,17 +48,17 @@ export default function WhyBeastPage() {
               {
                 num: '04',
                 title: 'We Are San Antonio',
-                content: 'We are not a remote team managing your account from a cubicle in another city. We are here. We know San Antonio - the neighborhoods, the culture, the competition, and the opportunity. That local knowledge translates to marketing that actually resonates with your audience.',
+                content: 'We are not a remote team managing your account from a cubicle in another city. We are here. We know San Antonio: the neighborhoods, the culture, the competition, and the opportunity. That local knowledge translates to marketing that actually resonates with your audience.',
               },
               {
                 num: '05',
                 title: 'We Measure What Matters',
-                content: 'Likes and impressions are nice, but they do not pay rent. We build every campaign around the metrics that actually drive your business forward - qualified leads, conversion rates, cost per acquisition, and return on ad spend. If it does not move the revenue needle, we rethink the strategy.',
+                content: 'Likes and impressions are nice, but they do not pay rent. We build every campaign around the metrics that actually drive your business forward: qualified leads, conversion rates, cost per acquisition, and return on ad spend. If it does not move the revenue needle, we rethink the strategy.',
               },
               {
                 num: '06',
                 title: 'We Are Your Partners, Not Your Vendors',
-                content: 'When you hire Beast Creative Agency, you are not just buying a service - you are gaining a strategic partner. We take the time to deeply understand your business, your customers, and your competitive landscape. Then we build strategies that reflect that understanding. Your goals become our goals.',
+                content: 'When you hire Beast Creative Agency, you are not just buying a service. You are gaining a strategic partner. We take the time to deeply understand your business, your customers, and your competitive landscape. Then we build strategies that reflect that understanding. Your goals become our goals.',
               },
             ].map(item => (
               <div key={item.num} style={{ display: 'grid', gridTemplateColumns: '80px 1fr', gap: '32px', alignItems: 'start' }}>

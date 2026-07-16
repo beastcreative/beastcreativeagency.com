@@ -48,7 +48,7 @@ export default function ServicesPage() {
             Marketing Services in San Antonio, TX
           </h2>
           <p style={{ fontSize: '17px', color: 'var(--text-secondary)', lineHeight: '1.8', fontFamily: 'var(--font-geist, sans-serif)' }}>
-            Beast Creative Agency delivers full-service marketing for brands across San Antonio, Austin, Houston, and nationwide. Whether you need a branding overhaul, a high-converting website, search engine optimization, or a CPG marketing strategy that gets your product on shelf - Beast has the team and the tools to make it happen.
+            Beast Creative Agency delivers full-service marketing for brands across San Antonio, Austin, Houston, and nationwide. Whether you need a branding overhaul, a high-converting website, search engine optimization, or a CPG marketing strategy that gets your product on shelf, Beast has the team and the tools to make it happen.
           </p>
         </div>
       </section>
