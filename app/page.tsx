@@ -366,7 +366,7 @@ export default function HomePage() {
             </FadeUp>
             <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '24px' }}>
               {[
-                { client: 'CHG — Consumer Health Group', tag: 'CPG Marketing', result: '15+ national food brands. 900+ recipes. One consolidated digital presence across Williams Foods, Pioneer Brand, Sun-Bird Seasonings, and Tribeca Oven.', href: '/branding-case-study' },
+                { client: 'CHG (Consumer Health Group)', tag: 'CPG Marketing', result: '15+ national food brands. 900+ recipes. One consolidated digital presence across Williams Foods, Pioneer Brand, Sun-Bird Seasonings, and Tribeca Oven.', href: '/branding-case-study' },
                 { client: 'TexanCleaner', tag: 'SEO + Web Design', result: 'Local cleaning service competing in a saturated market. SEO-driven growth with measurable increase in qualified inbound leads.', href: '/dermatology-marketing-case-study' },
                 { client: 'Premier Futbol Academy', tag: 'Branding + Web', result: "Full brand identity, Next.js website, fan store, and digital infrastructure for San Antonio's premier youth soccer academy.", href: '/branding-case-study' },
               ].map((cs) => (
